@@ -1,6 +1,6 @@
 const path = require('path');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const imagemin = require( "imagemin" )
+const webp = require( "imagemin-webp" )
 
 module.exports = {
   entry: ["./source/js/app.js"],
