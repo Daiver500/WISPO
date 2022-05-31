@@ -1,17 +1,24 @@
-.container {
-  max-width: 1280px;
+ .container {           // 1920
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 20px;
-}
+  padding: 0 40px;
 
-@media (max-width: $max-tablet-width) {
-  .container {
-    max-width: 1023px;
+  @include vp-1919 {    // 1366-1919
+    max-width: 1200px;
+    padding: 0 40px;
   }
-}
 
-@media (max-width: $max-mobile-width) {
-  .container {
-    max-width: 767px;
+  @include vp-1365 {    // 1024-1365
+    max-width: 900px;
+    padding: 0 25px;
+  }
+
+  @include vp-1023 {   // 768-1023
+    padding: 0 59px;
+  }
+
+  @include vp-767 {    // 375-767
+    padding: 0 24px;
   }
 }
