@@ -1,12 +1,19 @@
 const path = require('path');
+const webpack = require("webpack");
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
-  entry: ["./source/js/app.js"],
+  entry:  {
+    main: path.resolve(__dirname, './source/js/app.js'),
+  },
   output: {
-    filename: "bundle.js",
-    path: __dirname,
+    path: path.resolve(__dirname, './dist'),
+    filename: 'bundle.js',
   },
   devServer: {
     static: {
@@ -17,15 +24,14 @@ module.exports = {
     hot: true,
   },
   mode: 'none',
-  watch: true,
   module: {
     rules: [
       {
         test: /\.(scss)$/,
-
         use: [
-          {loader: MiniCssExtractPlugin.loader},
+          MiniCssExtractPlugin.loader,
           "css-loader",
+          "postcss-loader",
           "sass-loader",
         ],
       },
@@ -42,6 +48,17 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.min.css',
     }),
+    new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "source/img", to: "img" },
+        { from: "source/fonts", to: "fonts" },
+        { from: "source/index.html", to: "" },
+      ]
+    }),
+    new ImageminPlugin({
+      test: /\.(jpe?g|png|gif|svg)$/i
+    }),
   ],
   optimization: {
     minimizer: [
@@ -50,5 +67,3 @@ module.exports = {
     minimize: true,
   }
 };
-
-
