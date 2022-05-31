@@ -29,7 +29,6 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: $color-whisper;
 }
 
 main {
@@ -47,7 +46,8 @@ html {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
-  background-color: $color-default-black;
+  background-color: $color-whisper;
+  color: $color-default-black;
 
   @include vp-1919 {
     font-size: 18px;
