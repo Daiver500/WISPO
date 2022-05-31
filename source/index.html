@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Сайт об асфальтовых заводах</title>
-  <meta name="description" content="Асфальтобетонные заводы">
+  <title>Белый ветер</title>
+  <meta name="description" content="ремонт и продажа электроники">
   <meta name="keywords"
-    content="асфальтовый завод, асфальтный завод, асфальтобетонный завод, асфальтомесительная установка, бетонный завод, бетоносмесительная установка, бсу, абз">
+    content="apple, samsung, ремонт телефонов, ремонт планшетов, продажа телефонов">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="../style.min.css" as="style">
   <link rel="preload" href="fonts/Rajdhanimedium.woff2" as="font" />
@@ -15,379 +15,121 @@
 </head>
 
 <body class="page">
-  <header class="page-header">
-    <nav class="navigation">
-      <picture>
-        <!--<source type="image/webp" srcset="../img/icon_1.webp, ../img/icon_1@2x.webp 2x ">-->
-        <img class="navigation__picture" src="../img/abz-main.jpg" srcset="../img/abz-main@2x.jpg 2x" alt="фото абз" width="834" height="370">
-      </picture>
-      <div class="navigation__inner container">
-        <div class="navigation__logo-wrapper">
-          <a class="navigation__logo">
-            <img src="./img/logoabsontop.jpg" alt="логотип компании" width="154" height="125">
-          </a>
+  <header class="header">
+
+    <div class="header__top">
+      <div class="container">
+
+        <div class="header__top-wrapper">
+
+          <div class="header__logo-wrapper">
+            <a class="header__logo">
+              <img class="header__logo-desktop" src="./img/logo-desktop.png" width="315" height="50" alt="логотип">
+              <img class="header__logo-mobile" src="./img/logo-mobile.png" width="168" height="20" alt="логотип">
+            </a>
+          </div>
+
+          <div class="header__info">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">Контакты</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Гарантия</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__contacts">
+            <p class="header__text">Звоните, пн-вс 10:00 - 20:00</p>
+            <a class="header__link" href="tel:+73512207704">+7 351 220 77 04</a>
+          </div>
         </div>
-        <button class="navigation__toggle" type="button" aria-label="меню">
-          <svg class="navigation__open" width="25" height="18" viewBox="0 0 25 18" fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 1H25M0 9H25M0 17H25" stroke="currentColor" stroke-width="2" />
-          </svg>
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="navigation__close isHidden" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 23L23 1M23 23L1 1" stroke="currentColor" stroke-opacity="0.2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link navigation__link--active">Главная</a></li>
-          <li class="navigation__item"><a class="navigation__link" target="_blank"
-              href="catalog-main.html">Продукция</a></li>
-          <li class="navigation__item"><a class="navigation__link" target="_blank" href="news.html">Новости</a></li>
-          <li class="navigation__item"><a class="navigation__link" target="_blank" href="about.html">О компании</a></li>
-          <li class="navigation__item"><a class="navigation__link" target="_blank" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-        <div class="navigation__buttons-wrapper">
-        <div class="navigation__info">
-          <p class="navigation__text">По всем вопросам:</p>
-          <a class="navigation__link navigation__link-tel" href="tel:+79218624237">+7 (921)-862-42-37</a>
-          <a class="navigation__link navigation__link-mail" href="mailto:abs@ab-s.ru">abs@ab-s.ru</a>
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <div class="container">
+          <nav class="navigation">
+            <div class="navigation__buttons=mobile">
+              <button class="navigation__toggle-mobile" type="button" aria-label="Переключатель отображения меню"></button>
+              <button class="navigation__buttone-mobile" type="button">Связаться</button>
+            </div>
+            <ul class="navigation__list">
+                <li class="navigation__item navigation__item--catalog">
+                  <a href="#" class="navigation__link">Каталог</a>
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6ZM6 4C4.89543 4 4 4.89543 4 6C4 7.10457 4.89543 8 6 8C7.10457 8 8 7.10457 8 6C8 4.89543 7.10457 4 6 4Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20C0 16.6863 2.68629 14 6 14C9.31371 14 12 16.6863 12 20C12 23.3137 9.31371 26 6 26C2.68629 26 0 23.3137 0 20ZM6 18C4.89543 18 4 18.8954 4 20C4 21.1046 4.89543 22 6 22C7.10457 22 8 21.1046 8 20C8 18.8954 7.10457 18 6 18Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 6C14 2.68629 16.6863 0 20 0C23.3137 0 26 2.68629 26 6C26 9.31371 23.3137 12 20 12C16.6863 12 14 9.31371 14 6ZM20 4C18.8954 4 18 4.89543 18 6C18 7.10457 18.8954 8 20 8C21.1046 8 22 7.10457 22 6C22 4.89543 21.1046 4 20 4Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 20C14 16.6863 16.6863 14 20 14C23.3137 14 26 16.6863 26 20C26 23.3137 23.3137 26 20 26C16.6863 26 14 23.3137 14 20ZM20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18Z" fill="currentColor"/>
+                    </svg>
+
+                </li>
+                <li class="navigation__item navigation__item--apple"><a class="navigation__link" href="#">Ремонт apple</a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone X</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone Xs</a></li>
+                  </ul>
+                  <svg width="21" height="24" viewBox="0 0 21 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8985 0.0714487C13.8597 0.279634 12.7977 0.847269 12.0654 1.58585C11.0337 2.62622 10.4142 4.05547 10.4573 5.29575L10.4706 5.67819L10.8819 5.6724C11.8477 5.65875 12.7923 5.20711 13.7001 4.32508C14.8553 3.20264 15.4627 1.87022 15.4627 0.458164V0L15.3373 0.00432186C15.2684 0.00671268 15.0709 0.0369198 14.8985 0.0714487ZM14.1178 5.77249C13.6262 5.86551 13.1803 5.99387 12.4994 6.23856C12.1859 6.35116 11.6731 6.52661 11.3596 6.62836C10.5826 6.88068 10.5068 6.87236 9.08016 6.37714C7.55168 5.84661 7.24377 5.77456 6.50435 5.77447C4.54232 5.77419 2.67789 6.8468 1.54846 8.62552C1.11212 9.3127 0.725659 10.3412 0.545581 11.2943C0.455131 11.7731 0.442868 11.9812 0.444463 13.0116C0.445922 13.9885 0.462654 14.2849 0.544578 14.7893C0.88504 16.8855 1.70561 19.0285 2.8039 20.6898C3.74646 22.1155 4.70986 23.1759 5.47859 23.6336C5.95336 23.9163 6.26355 24.0001 6.83342 24C7.39645 23.9999 7.82449 23.9021 8.6492 23.5851C9.74631 23.1634 10.263 23.0601 11.1089 23.0933C11.7851 23.1199 12.2811 23.2324 13.0485 23.5332C14.684 24.1743 15.6202 24.1523 16.648 23.4485C17.5793 22.8106 18.9363 21.0417 19.7439 19.4126C20.0117 18.8725 20.4233 17.8697 20.4438 17.7075C20.4521 17.642 20.3672 17.5743 20.0952 17.4291C18.8419 16.7601 17.8525 15.62 17.4523 14.3833C17.1567 13.47 17.1134 12.2047 17.347 11.3009C17.6414 10.1619 18.2733 9.2521 19.3071 8.47849C19.5535 8.29412 19.7786 8.13536 19.8074 8.1257C19.8732 8.10359 19.4758 7.59572 19.1491 7.28423C18.4047 6.57447 17.4339 6.08509 16.2819 5.83875C15.6581 5.70537 14.6377 5.6741 14.1178 5.77249Z" fill="currentColor"/>
+                    </svg>
+                </li>
+                <li class="navigation__item navigation__item--phones" ><a class="navigation__link"href="useful-materials.html">Ремонт смартфонов</a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone X</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone Xs</a></li>
+                  </ul>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1563 14.8749C15.0831 13.5049 15.7195 11.4371 18.1387 14.0658C20.5564 16.6946 20.3139 17.6587 18.3871 19.0287C11.0987 24.2706 -5.46969 6.86329 1.61738 0.99062C3.54421 -0.379324 3.46778 -0.586109 5.88697 2.04134C8.30469 4.67138 7.00397 5.02808 5.07861 6.39932C3.15179 7.76926 11.2295 16.2448 13.1563 14.8749Z" fill="currentColor"/>
+                    </svg>
+
+                </li>
+                <li class="navigation__item navigation__item--tablet">
+                  <a class="navigation__link" href="contacts.html">Ремонт планшетов</a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone X</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone Xs</a></li>
+                  </ul>
+                  <svg width="27" height="26" viewBox="0 0 27 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33337 5C7.78109 5 7.33337 5.44772 7.33337 6V20C7.33337 20.5523 7.78109 21 8.33337 21H18.3334C18.8857 21 19.3334 20.5523 19.3334 20V6C19.3334 5.44772 18.8857 5 18.3334 5H8.33337ZM5.33337 6C5.33337 4.34315 6.67652 3 8.33337 3H18.3334C19.9902 3 21.3334 4.34315 21.3334 6V20C21.3334 21.6569 19.9902 23 18.3334 23H8.33337C6.67652 23 5.33337 21.6569 5.33337 20V6Z" fill="black"/>
+                    <path d="M14.3334 19C14.3334 19.5523 13.8857 20 13.3334 20C12.7811 20 12.3334 19.5523 12.3334 19C12.3334 18.4477 12.7811 18 13.3334 18C13.8857 18 14.3334 18.4477 14.3334 19Z" fill="currentColor"/>
+                    </svg>
+
+                </li>
+                <li class="navigation__item navigation__item--notebook"><a class="navigation__link" href="contacts.html">Ремонт ноутбуков</a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone X</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone Xs</a></li>
+                  </ul>
+                  <svg width="27" height="26" viewBox="0 0 27 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_701_602)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77771 6C7.22543 6 6.77771 6.44772 6.77771 7V16H20.7777V7C20.7777 6.44772 20.33 6 19.7777 6H7.77771ZM4.77771 7C4.77771 5.34315 6.12086 4 7.77771 4H19.7777C21.4346 4 22.7777 5.34315 22.7777 7V18H4.77771V7Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.39756 16H22.158L25.9592 19.3789C26.9901 20.2952 26.3419 22 24.9627 22H2.59286C1.21358 22 0.565429 20.2952 1.59631 19.3789L5.39756 16ZM6.15796 18L3.90796 20H23.6476L21.3976 18H6.15796Z" fill="currentColor"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_701_602">
+                    <rect width="26" height="26" fill="white" transform="translate(0.77771)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-          <button class="btn navigation__btn"><span>Заказать звонок</span>
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.67386 19.0895L5.67384 19.0895C3.96263 17.2607 2.46513 15.1745 1.45699 13.2146C0.543106 11.4383 0.669329 9.21815 1.78056 7.55779C1.9842 7.25135 2.21952 6.96572 2.4773 6.70793L3.8593 5.32593L3.8594 5.32584C4.47613 4.71022 5.54281 4.71162 6.16015 5.32565L6.16042 5.32591L8.92425 8.08874C9.23155 8.39495 9.40137 8.8042 9.40137 9.239C9.40137 9.6729 9.23149 10.082 8.92444 10.3891L8.92441 10.3891L7.14144 12.1711C7.02616 12.2863 7.01091 12.4682 7.09482 12.5898L6.97137 12.675M5.67386 19.0895L15.6052 17.068L13.8223 18.8499L13.8223 18.8499C13.7119 18.9603 13.521 18.9773 13.4036 18.8966C10.9305 17.1848 8.80739 15.0627 7.09469 12.5896L6.97137 12.675M5.67386 19.0895C7.11812 20.6323 8.74743 21.9981 10.5156 23.1478L10.7623 23.3086L10.7625 23.3087L10.7785 23.3192C12.0715 24.164 13.5806 25.15 15.3364 25.15L15.3674 25.15L15.3684 25.15M5.67386 19.0895L15.3684 25.15M6.97137 12.675C8.69437 15.163 10.8304 17.298 13.3184 19.02L7.03537 12.065C6.87137 12.229 6.84437 12.491 6.97137 12.675ZM15.3684 25.15C16.8267 25.1397 18.2544 24.544 19.2864 23.5121L15.3684 25.15ZM20.6695 22.131L20.6694 22.1311L19.2864 23.5121L20.6695 22.131ZM20.6695 22.131C21.303 21.4964 21.303 20.4646 20.6695 19.83L20.6694 19.8299M20.6695 22.131L20.6694 19.8299M20.6694 19.8299L17.9064 17.0679M20.6694 19.8299L17.9064 17.0679M4.77844 6.24607L4.7784 6.2461L3.39644 7.62707C3.19849 7.82502 3.01866 8.04443 2.86098 8.27951C2.00939 9.55312 1.91269 11.2578 2.61375 12.6204L2.61377 12.6204C3.56659 14.4734 4.99005 16.4562 6.62388 18.2015L6.62391 18.2015C7.99561 19.6677 9.54427 20.9648 11.2251 22.0572L11.2255 22.0575L11.4744 22.2204L4.77844 6.24607ZM4.77844 6.24607C4.84039 6.18411 4.92227 6.15 5.01037 6.15C5.09862 6.15 5.18012 6.18419 5.24071 6.24547L5.24132 6.24609M4.77844 6.24607L5.24132 6.24609M5.24132 6.24609L8.0053 9.00907C8.06749 9.07126 8.10137 9.15223 8.10137 9.24C8.10137 9.32777 8.06749 9.40874 8.0053 9.47093L6.22233 11.2529L6.2223 11.2529M5.24132 6.24609L6.2223 11.2529M6.2223 11.2529C5.66294 11.8123 5.57907 12.6857 6.02501 13.3303L6.02506 13.3304L6.2223 11.2529ZM16.5244 17.9871L16.5244 17.9871L14.7414 19.7691C14.7414 19.7691 14.7414 19.7691 14.7414 19.7691C14.4353 20.0751 14.0122 20.251 13.5784 20.251C13.2492 20.251 12.9324 20.1529 12.663 19.9663C12.663 19.9663 12.663 19.9663 12.663 19.9663L12.7484 19.843L16.5244 17.9871ZM16.5244 17.9871C16.6469 17.8646 16.8649 17.8646 16.9873 17.9871L16.9873 17.9871M16.5244 17.9871L16.9873 17.9871M16.9873 17.9871L19.7503 20.7491C19.7503 20.7491 19.7503 20.7491 19.7503 20.7491C19.8777 20.8765 19.8777 21.0845 19.7503 21.2119C19.7503 21.2119 19.7503 21.2119 19.7503 21.2119L18.3683 22.5929L18.3683 22.5929C17.5774 23.3839 16.4803 23.8421 15.3609 23.85M16.9873 17.9871L15.3609 23.85M15.3609 23.85H15.3374C13.9774 23.85 12.7293 23.0399 11.4745 22.2205L15.3609 23.85ZM17.9064 17.0679C17.9064 17.0679 17.9064 17.0679 17.9064 17.0679M17.9064 17.0679L17.9064 17.0679M17.9064 17.0679C17.29 16.4515 16.2221 16.4502 15.6053 17.0679L17.9064 17.0679ZM14.9954 0.85C14.6365 0.85 14.3454 1.14116 14.3454 1.5C14.3454 1.85884 14.6365 2.15 14.9954 2.15C19.8745 2.15 23.8454 6.12084 23.8454 11C23.8454 11.3588 24.1365 11.65 24.4954 11.65C24.8542 11.65 25.1454 11.3588 25.1454 11C25.1454 5.40316 20.5922 0.85 14.9954 0.85ZM20.8454 11C20.8454 11.3588 21.1365 11.65 21.4954 11.65C21.8542 11.65 22.1454 11.3588 22.1454 11C22.1454 7.05716 18.9382 3.85 14.9954 3.85C14.6365 3.85 14.3454 4.14116 14.3454 4.5C14.3454 4.85884 14.6365 5.15 14.9954 5.15C18.2215 5.15 20.8454 7.77384 20.8454 11ZM14.3454 7.5C14.3454 7.85884 14.6365 8.15 14.9954 8.15C16.5665 8.15 17.8454 9.42884 17.8454 11C17.8454 11.3588 18.1365 11.65 18.4954 11.65C18.8542 11.65 19.1454 11.3588 19.1454 11C19.1454 8.71116 17.2842 6.85 14.9954 6.85C14.6365 6.85 14.3454 7.14116 14.3454 7.5Z" fill="red" stroke="red" stroke-width="0.3"/>
-              </svg>
-          </button>
       </div>
-      </div>
-    </nav>
+    </div>
   </header>
   <main class="main">
     <picture>
-      <!--<source type="image/webp" srcset="../img/icon_1.webp, ../img/icon_1@2x.webp 2x ">-->
-      <img class="about__picture" src="../img/map.png" srcset="../img/background@2x.png 2x" alt="карта россии" width="1444" height="1089">
+      <!--<source type="image/webp" srcset="../img/icon_1.webp, ../img/icon_1@2x.webp 2x ">
+      <img class="about__picture" src="../img/map.png" srcset="../img/background@2x.png 2x" alt="карта россии" width="1444" height="1089">-->
     </picture>
-
-    <section class="about">
-
-      <div class="about__inner container">
-      <div class="about__data-wrapper">
-       <ul class="about__list">
-        <li class="about-card about-card--active">
-          <picture>
-            <!--<source type="image/webp" srcset="../img/icon_1.webp, ../img/icon_1@2x.webp 2x ">-->
-            <img class="about-card__image" src="../img/icon_1.png" srcset="../img/icon_1@2x.png 2x" alt="иконка" width="66" height="64">
-          </picture>
-          <div class="about-card__info">
-            <p>233 единицы</p>
-            <span>продукции поставили</p>
-          </div>
-        </li>
-
-        <li class="about-card">
-          <picture>
-            <!--<source type="image/webp" srcset="../img/icon_2.webp, ../img/icon_2@2x.webp 2x ">-->
-            <img class="about-card__image" src="../img/icon_2.png" srcset="../img/icon_2@2x.png 2x" alt="иконка" width="66" height="53">
-          </picture>
-          <div class="about-card__info">
-            <p>c 2004 года</p>
-            <span>на рынке</span>
-          </div>
-        </li>
-
-        <li class="about-card">
-          <picture>
-            <!--<source type="image/webp" srcset="../img/icon_3.webp, ../img/icon_3@2x.webp 2x ">-->
-            <img class="about-card__image" src="../img/icon_3.png" srcset="../img/icon_3@2x.png 2x" alt="иконка" width="55" height="68">
-          </picture>
-          <div class="about-card__info">
-            <p>от 15 дней</p>
-            <span>срок поставки</span>
-          </div>
-        </li>
-
-        <li class="about-card">
-          <picture>
-           <!-- <source type="image/webp" srcset="../img/icon_4.webp, ../img/icon_4@2x.webp 2x ">-->
-            <img class="about-card__image" src="../img/icon_4.png" srcset="../img/icon_4@2x.png 2x" alt="иконка" width="66" height="54">
-          </picture>
-          <div class="about-card__info">
-            <p>запчасти в России</p>
-            <span>собственный склад</span>
-          </div>
-        </li>
-
-        <li class="about-card">
-          <picture>
-            <!--<source type="image/webp" srcset="../img/icon_5.webp, ../img/icon_5@2x.webp 2x ">-->
-            <img class="about-card__image" src="../img/icon_5.png" srcset="../img/icon_5@2x.png 2x" alt="иконка" width="71" height="50">
-          </picture>
-          <div class="about-card__info">
-            <p>Поставка</p>
-            <span>оборудования под ключ</span>
-          </div>
-        </li>
-
-        <li class="about-card">
-          <picture>
-            <!--<source type="image/webp" srcset="../img/icon_6.webp, ../img/icon_6@2x.webp 2x ">-->
-            <img class="about-card__image" src="../img/icon_6.png" srcset="../img/icon_6@2x.png 2x" alt="иконка" width="55" height="66">
-          </picture>
-          <div class="about-card__info">
-            <p>до 2 лет</p>
-            <span>расширенная гарантия</span>
-          </div>
-        </li>
-       </ul>
-       </div>
-       <div class="about__info-wrapper">
-       <div class="about-info about-info--active">
-        <picture>
-          <!--<source type="image/webp" srcset="../img/tab-about-1.webp, ../img/tab-about-1@2x.webp 2x ">-->
-          <img class="about-info__picture" src="../img/tab-about-1.jpg" srcset="../img/tab-about-1@2x.jpg 2x" alt="фото техники" width="961" height="271">
-        </picture>
-       </div>
-       <div class="about-info">
-        <picture>
-          <!--<source type="image/webp" srcset="../img/tab-about-2.webp, ../img/tab-about-2@2x.webp 2x ">-->
-          <img class="about-info__picture" src="../img/tab-about-2.jpg" srcset="../img/tab-about-2@2x.jpg 2x" alt="фото техники" width="961" height="271">
-        </picture>
-      </div>
-      <div class="about-info">
-        <picture>
-          <!--<source type="image/webp" srcset="../img/tab-about-3.webp, ../img/tab-about-3@2x.webp 2x ">-->
-          <img class="about-info__picture" src="../img/tab-about-3.jpg" srcset="../img/tab-about-3@2x.jpg 2x" alt="фото техники" width="961" height="271">
-        </picture>
-      </div>
-      <div class="about-info">
-        <picture>
-          <!--<source type="image/webp" srcset="../img/tab-about-4.webp, ../img/tab-about-4@2x.webp 2x ">-->
-          <img class="about-info__picture" src="../img/tab-about-4.jpg" srcset="../img/tab-about-4@2x.jpg 2x" alt="фото техники" width="961" height="271">
-        </picture>
-      </div>
-      <div class="about-info">
-        <picture>
-          <!--<source type="image/webp" srcset="../img/tab-about-5.webp, ../img/tab-about-5@2x.webp 2x ">-->
-          <img class="about-info__picture" src="../img/tab-about-5.jpg" srcset="../img/tab-about-5@2x.jpg 2x" alt="фото техники" width="961" height="271">
-        </picture>
-      </div>
-      <div class="about-info">
-        <picture>
-          <!--<source type="image/webp" srcset="../img/tab-about-6.webp, ../img/tab-about-62x.webp 2x ">-->
-          <img class="about-info__picture" src="../img/tab-about-6.jpg" srcset="../img/tab-about-6@2x.jpg 2x" alt="фото техники" width="961" height="271">
-        </picture>
-      </div>
-       </div>
-      </div>
-    </section>
-    <section class="slider">
-      <div class="slider__inner container">
-
-        <div class="slider__header">
-          <h3 class="slider__title">Качественная продукция и современный сервис</h3>
-          <p class="slider__text">"АБ Сервис" это не только широкий ассортимент надежных дорожных и строительных машин и оборудования, но и современные методы работы в основе которых качественный сервис</p>
-          <a class="slider__link" href="catalog.html" target="_blank">Асфальтобетонные заводы</a>
-        </div>
-
-        <div class="slider__wrapper">
-          <div class="slider__description">
-            <picture class="slider__picture">
-              <source type="image/webp"
-                srcset="../source/img/slider-first.webp, ../source/img/slider-first@2x.webp 2x ">
-              <img class="slider__image" src="../source/img/slider-first.jpg"
-                srcset="../source/img/slider-first@2x.jpg 2x" width="600" height="768" alt="асфальтовый завод">
-            </picture>
-            <div class="slider__information-header">
-              <p class="slider__title">ABW1000</p>
-              <p class="slider__text">Асфальтобетонный завод</p>
-            </div>
-          </div>
-          <div class="slider__description">
-            <picture class="slider__picture">
-              <source type="image/webp"
-                srcset="../source/img/slider-second.webp, ../source/img/slider-second@2x.webp 2x ">
-              <img class="slider__image" src="../source/img/slider-second.jpg"
-                srcset="../source/img/slider-second@2x.jpg 2x" width="600" height="768" alt="бетонный завод">
-            </picture>
-            <div class="slider__information-header">
-              <p class="slider__title">БСУ60</p>
-              <p class="slider__text">Бетонный завод</p>
-            </div>
-          </div>
-          <div class="slider__description">
-            <picture class="slider__picture">
-              <source type="image/webp" srcset="../source/img/slider-third.webp, ../source/img/slider-third2x.webp 2x ">
-              <img class="slider__image" src="../source/img/slider-third.jpg"
-                srcset="../source/img/slider-third@2x.jpg 2x" width="600" height="768" alt="асфальтовый завод">
-            </picture>
-            <div class="slider__information-header">
-              <p class="slider__title">ABW1500</p>
-              <p class="slider__text">Асфальтовый завод</p>
-            </div>
-          </div>
-          <div class="slider__description">
-            <picture class="slider__picture">
-              <source type="image/webp"
-                srcset="../source/img/slider-fourth.webp, ../source/img/slider-fourth@2x.webp 2x ">
-              <img class="slider__image" src="../source/img/slider-fourth.jpg"
-                srcset="../source/img/slider-fourth@2x.jpg 2x" width="600" height="768" alt="бетонный завод">
-            </picture>
-            <div class="slider__information-header">
-              <p class="slider__title">БСУ120</p>
-              <p class="slider__text">Бетоносмесительная установка</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider__information-wrapper">
-          <div class="slider__buttons-wrapper">
-            <div class="slider__buttons">
-              <button class="slider__button slider__button-left" aria-label="left button">
-                <svg class="slider__svg-left" width="32" height="32" viewBox="0 0 32 32" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13.0426 15.999L19.0909 9.95758C19.1973 9.8511 19.2817 9.72468 19.3393 9.58556C19.3969 9.44643 19.4266 9.29731 19.4266 9.14672C19.4266 8.99613 19.3969 8.84702 19.3393 8.70789C19.2817 8.56876 19.1973 8.44235 19.0909 8.33587C18.9845 8.22938 18.8582 8.14492 18.7192 8.08729C18.5802 8.02966 18.4312 8 18.2807 8C18.1302 8 17.9812 8.02966 17.8422 8.08729C17.7032 8.14492 17.5768 8.22938 17.4704 8.33587L10.6232 15.1882C10.5162 15.2943 10.4313 15.4206 10.3734 15.5598C10.3155 15.699 10.2856 15.8483 10.2856 15.999C10.2856 16.1498 10.3155 16.2991 10.3734 16.4382C10.4313 16.5774 10.5162 16.7037 10.6232 16.8099L17.4704 23.6622C17.5765 23.7692 17.7027 23.8542 17.8418 23.9122C17.9809 23.9701 18.13 24 18.2807 24C18.4313 24 18.5805 23.9701 18.7196 23.9122C18.8586 23.8542 18.9848 23.7692 19.0909 23.6622C19.1979 23.556 19.2828 23.4297 19.3407 23.2905C19.3987 23.1514 19.4285 23.0021 19.4285 22.8513C19.4285 22.7006 19.3987 22.5513 19.3407 22.4121C19.2828 22.273 19.1979 22.1466 19.0909 22.0405L13.0426 15.999Z"
-                    fill="currentColor" />
-                </svg>
-              </button>
-              <button class="slider__button slider__button-right" aria-label="right button">
-                <svg class="slider__svg-right" width="32" height="32" viewBox="0 0 32 32" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M18.9574 15.999L12.9091 9.95758C12.8027 9.8511 12.7183 9.72468 12.6607 9.58556C12.6031 9.44643 12.5734 9.29731 12.5734 9.14672C12.5734 8.99613 12.6031 8.84702 12.6607 8.70789C12.7183 8.56876 12.8027 8.44235 12.9091 8.33587C13.0155 8.22938 13.1418 8.14492 13.2808 8.08729C13.4198 8.02966 13.5688 8 13.7193 8C13.8698 8 14.0188 8.02966 14.1578 8.08729C14.2968 8.14492 14.4232 8.22938 14.5296 8.33587L21.3768 15.1882C21.4838 15.2943 21.5687 15.4206 21.6266 15.5598C21.6845 15.699 21.7144 15.8483 21.7144 15.999C21.7144 16.1498 21.6845 16.2991 21.6266 16.4382C21.5687 16.5774 21.4838 16.7037 21.3768 16.8099L14.5296 23.6622C14.4235 23.7692 14.2973 23.8542 14.1582 23.9122C14.0191 23.9701 13.87 24 13.7193 24C13.5687 24 13.4195 23.9701 13.2804 23.9122C13.1414 23.8542 13.0152 23.7692 12.9091 23.6622C12.8021 23.556 12.7172 23.4297 12.6593 23.2905C12.6013 23.1514 12.5715 23.0021 12.5715 22.8513C12.5715 22.7006 12.6013 22.5513 12.6593 22.4121C12.7172 22.273 12.8021 22.1466 12.9091 22.0405L18.9574 15.999Z"
-                    fill="currentColor" />
-                </svg>
-              </button>
-            </div>
-            <div class="slider__pages pages">
-              <p class="pages__text" id="current">01</p>
-              <p class="pages__text">-</p>
-              <p class="pages__text" id="total">04</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="information">
-      <div class="information__inner container">
-        <ul class="information__list list">
-          <li class="list__item">
-            <h3 class="list__title">Гарантия</h3>
-            <p class="list__text">Гарантийный срок для Покупателя составляет 12 (двенадцать) месяцев с момента ввода
-              завода в эксплуатацию и передачи Покупателю, но не более 18 месяцев с момента отправки бетонного завода к
-              месту назначения. Быстроизнашивающиеся детали, перечень которых приведён в эксплуатационной документации,
-              исключены из гарантии. Гарантия не распространяется на детали, подверженные нормальному износу
-              (быстроизнашивающиеся части смесителя, расходные материалы, фильтры, масла и технические жидкости, ремни,
-              резинотехнические изделия и т.п.).</p>
-            <button class="list__button" aria-label="open close button">
-
-            </button>
-          </li>
-          <li class="list__item">
-            <h3 class="list__title">Сервис</h3>
-            <p class="list__text">Сервис — приоритетное направление деятельности компании.
-              Где бы Вы ни находились, в любое время года прошедшие обучение на заводе-изготовителе и имеющие сертификат
-              соответствия на право проведения сервисных работ специалисты компании обеспечат незамедлительное и
-              качественное устранение возможных неполадок. Порукой тому, что приобретенная у «АБ Сервис» техника будет
-              всегда в рабочем состоянии – наличие собственного склада запасных частей и отлаженные связи с
-              компаниями-производителями.
-              При необходимости специалисты «АБ Сервис» поставят необходимые расходные материалы, проведут обучение
-              работников эксплуатирующей организации, окажут консультации, предоставят весь пакет технической
-              документации.</p>
-            <button class="list__button" aria-label="open close button">
-
-            </button>
-          </li>
-
-          <li class="list__item">
-            <h3 class="list__title">Доставка</h3>
-            <p class="list__text">Доставка осуществляется "от двери до двери"</p>
-            <button class="list__button" aria-label="open close button">
-
-            </button>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="video">
-      <div class="video__inner container">
-        <div class="video__text-wrapper">
-          <p class="video__text">
-            Компания «АБ Сервис» представляет <a class="video__link" target="_blank"
-              href="catalog-abz.html">асфальтобетонные заводы</a>, <a class="video__link" target="_blank"
-              href="catalog-bsu.html">бетонные заводы</a>. Хорошо известная во всем мире продукция, предназначена для
-            самого широкого круга пользователей – строителей, дорожников, коммунальщиков, горняков. Ее отличают
-            надежность, высокая производительность, неприхотливость, и все это за разумную доступную цену.
-            «АБ Сервис» – это не только широкий ассортимент продукции, но и современные методы работы, когда во главу
-            угла ставится не желание получить сиюминутную выгоду, а стремление установить долгосрочные партнерские
-            взаимоотношения с клиентом, в основе которых лежит качественный и эффективный сервис.
-            «АБ Сервис» – это честный профессиональный подход к каждому клиенту. Мы заинтересованы в Вашем процветании и
-            готовы работать на него вместе с Вами.
-          </p>
-        </div>
-        <video class="video__body" width="430" height="315" poster="../source/img/video.png" controls="controls"
-          tabindex="0">
-          <!--<source src="../source/video/videoplayback.mp4" type="video/mp4">-->
-
-          <iframe width="430" height="315" src="https://www.youtube.com/embed/hlAZJpM0-mo" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-
-          Тег video не поддерживается вашим браузером.
-          <a class="video__link" target="_blank" href="../source/video/video.mp4">Скачайте видео</a>
-        </video>
-
-      </div>
-    </section>
-
   </main>
-  <footer class="footer">
-    <section class="footer__inner container">
-      <picture>
-        <!--<source type="image/webp" srcset="../img/icon_1.webp, ../img/icon_1@2x.webp 2x ">-->
-        <img class="footer__picture" src="../img/footer-bg.jpg" srcset="../img/footer-bg@2x.jpg 2x" alt="фото абз" width="834" height="370">
-      </picture>
-      <div class="footer__destinations">
-        <p class="footer__title">Наша продукция</p>
-        <div class="footer__destinations-inner">
-          <ul class="footer__list">
-            <li class="footer__item"><a class="footer__link" href="catalog-abz.html">АБЗ</a></li>
-            <li class="footer__item"><a class="footer__link" href="catalog-bsu.html">БСУ</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__contacts contacts">
-        <p class="contacts__title">Наши контакты</p>
-        <a class="contacts__link contacts__link-mail" href="mailto:abs@ab-s.ru">abs@ab-s.ru</a>
-        <a class="contacts__link contacts__link-tel" href="tel:+79218624237">+7 (921)-862-42-37</a>
-      </div>
-      <div class="footer__description description">
-        <p class="description__title">____</p>
-        <p class="description__text">
-          --------
-        </p>
-      </div>
-      <div class="footer__form">
-      <form >
-        <label class="footer__label"> <span class="visually-hidden">Имя</span>
-          <input pattern="^[A-zА-яЁё]+$" type="text" name="text" placeholder="Имя*" required
-            oninvalid="setCustomValidity('Введите имя на кириллице или латинице')" oninput="setCustomValidity('')">
-        </label>
-        <label class="footer__label"> <span class="visually-hidden">Телефон</span>
-          <input type="text" name="telephone" id="phone" placeholder="Номер телефона*" required
-            oninvalid="setCustomValidity('Введите 10 цифр')" oninput="setCustomValidity('')" />
-        </label>
-        <button class="footer__form-button" type="submit">Оставить заявку</button>
-      </form>
-      </div>
-    </section>
-  </footer>
   <section class="modal hidden">
     <div class="modal__inner">
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
