@@ -1,6 +1,7 @@
 .text-medium {
   font-size: 26px;
   line-height: 31.2px;
+  margin: 0;
 
   @include vp-1919 {
     font-size: 20px;

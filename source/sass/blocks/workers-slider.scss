@@ -1,0 +1,67 @@
+
+.workers-slider {
+  display: flex;
+}
+
+.workers-pagination.swiper-pagination {
+  bottom: -50px;
+}
+
+.workers-btn.swiper-button-prev:after,
+.workers-btn.swiper-button-next:after {
+  display: none;
+}
+
+.workers-btn {
+  border-radius: 300px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid $color-whisper;
+  background: $color-default-white;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 525px;
+  transition: 0.3s ease;
+}
+
+.workers-btn svg {
+  stroke: $color-default-black;
+}
+
+.workers-btn-left {
+  left: -25px;
+}
+
+.workers-btn-right {
+  right: -25px;
+}
+
+@media (hover: hover), screen and (min-width: 0\0) {
+  .workers-btn:hover svg,
+  .workers-btn:focus svg {
+    stroke: $color-default-white;
+  }
+
+  .workers-btn:hover,
+  .workers-btn:focus {
+    background-color: $color-default-black;
+  }
+}
+
+.workers-pagination .swiper-pagination-bullet-active,
+.workers-pagination .swiper-pagination-bullet {
+  background-color: $color-default-black;
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+  opacity: 1;
+}
+
+.workers-pagination .swiper-pagination-bullet-active {
+  outline: 3px solid #000000;
+  background-color: $color-default-white;
+}
+
+.workers-pagination.swiper-pagination .swiper-pagination-bullet {
+  margin: 0 18px;
+}

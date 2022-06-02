@@ -1,0 +1,96 @@
+.worker-card {
+  padding: 19px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.worker-card__image {
+  max-height: 223px;
+  max-width: 223px;
+  margin-bottom: 40px;
+}
+
+.worker-card__image img {
+  border-radius: 1000px;
+}
+
+.worker-card__text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.worker-card__text-wrapper .title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.worker-card__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  @include vp-1919 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  @include vp-1365 {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+}
+
+.worker-card__task,
+.worker-card__tip {
+  font-size: 16px;
+  line-height: 19.2px;
+
+  @include vp-1365 {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+}
+
+.worker-card__task {
+  padding-left: 34px;
+  position: relative;
+  margin-top: auto;
+}
+
+.worker-card__task:before {
+  content: '';
+  position: absolute;
+  background-image: url('../img/svg/icon-jobs-done.svg');
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+}
+
+.worker-card__tip {
+  padding: 16px;
+  padding-right: 35px;
+  background-color: $color-white-smoke;
+  border-radius: 20px;
+  margin: 0;
+  margin-top: 32px;
+  min-width: 296px;
+  align-self: center;
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+}
+
+.worker-card__upper-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 132px;
+}
+

@@ -21,7 +21,7 @@ a {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .wrapper {
@@ -46,7 +46,7 @@ html {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
-  background-color: $color-whisper;
+  background-color: $color-default-white;
   color: $color-default-black;
 
   @include vp-1919 {

@@ -1,0 +1,38 @@
+.service {
+  margin-bottom: 120px;
+}
+
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.service__item {
+  margin-bottom: 30px;
+  max-height: 478px;
+  max-width: 745px;
+}
+
+.service__item:nth-child(2n+1) {
+  margin-right: 30px;
+}
+
+.service__item:nth-child(2) {
+  overflow-y: auto;
+}
+
+.service__item .title {
+  margin-bottom: 60px;
+}
+
+.service__item p {
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.service__item-btn {
+  margin-top: 8px;
+}

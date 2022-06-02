@@ -2,6 +2,7 @@
   font-weight: 800;
   font-size: 80px;
   line-height: 80px;
+  margin: 0;
 
   @include vp-1919 {
     font-size: 70px;
@@ -52,5 +53,26 @@
   @include vp-1365 {
     font-size: 40px;
     line-height: 40px;
+  }
+}
+
+.title--tiny {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33.8px;
+
+  @include vp-1919 {
+    font-size: 22px;
+    line-height: 28.6px;
+  }
+
+  @include vp-1365 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
