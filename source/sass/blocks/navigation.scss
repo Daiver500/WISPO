@@ -1,0 +1,112 @@
+.navigation {
+  display: flex;
+}
+
+.navigation__list {
+  display: flex;
+  padding: 10px 0;
+  position: relative;
+}
+
+.navigation__list,
+.navigation__sublist,
+.navigation__subsublist {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  align-items: center;
+}
+
+.navigation__sublist,
+.navigation__subsublist {
+  position: absolute;
+  transition: 0.3s ease;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  padding: 10px;
+  background-color: $color-default-white;
+  border-radius: 20px;
+  border: 2px solid $color-white-smoke;
+  width: 100%;
+}
+
+.navigation__sublist {
+  top: 25px;
+  left: 30px;
+}
+
+.navigation__subsublist {
+  top: -10px;
+  left: 90px;
+}
+
+.navigation__item,
+.navigation__subitem  {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.navigation__subitem:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.navigation__item {
+  z-index: 10;
+}
+
+.navigation__subitem {
+  z-index: 20;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 115px;
+}
+
+.navigation__item:not(:first-child):after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 8px;
+  width: 9px;
+  height: 8px;
+  background-image: url('../img/svg/icon-arrow-down.svg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.navigation__link,
+.navigation__sublink {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-default-black;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.navigation__link {
+  margin-left: 10px;
+}
+
+.navigation__sublink {
+  transition: 0.3s ease;
+}
+
+@media (hover: hover), screen and (min-width: 0\0) {
+  .navigation__link:hover,
+  .navigation__link:focus,
+  .navigation__sublink:hover,
+  .navigation__sublink:focus {
+    opacity: 0.5;
+  }
+
+  .navigation__item:hover .navigation__sublist,
+  .navigation__subitem:hover .navigation__subsublist,
+  .navigation__item:focus .navigation__sublist,
+  .navigation__subitem:focus .navigation__subsublist {
+    transform: scaleY(1);
+  }
+}
+

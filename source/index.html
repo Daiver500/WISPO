@@ -32,20 +32,26 @@
           <div class="header__info">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link" href="#">Контакты</a>
+                <a class="header__link" href="#" target="_blank">Контакты</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">Отзывы</a>
+                <a class="header__link" href="#" target="_blank">Отзывы</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">Гарантия</a>
+                <a class="header__link" href="#" target="_blank">Гарантия</a>
               </li>
             </ul>
           </div>
 
           <div class="header__contacts">
-            <p class="header__text">Звоните, пн-вс 10:00 - 20:00</p>
-            <a class="header__link" href="tel:+73512207704">+7 351 220 77 04</a>
+            <div class="header__text-wrapper">
+              <svg class="show" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="5" cy="5" r="5" fill="#56CB64" fill-opacity="0.4"/>
+                <circle cx="5" cy="5" r="3" fill="#56CB64"/>
+                </svg>
+              <p class="header__text">Звоните, пн-вс 10:00 - 20:00</p>
+            </div>
+            <a class="header__phone" href="tel:+73512207704">+7 351 220 77 04</a>
           </div>
 
         </div>
@@ -56,89 +62,101 @@
       <div class="container">
           <nav class="navigation">
 
-            <div class="navigation__buttons=mobile">
-              <button class="navigation__toggle-mobile" type="button" aria-label="Переключатель отображения меню"></button>
+            <div class="navigation__buttons-mobile">
+              <button class="navigation__toggle-mobile" type="button" aria-label="Переключатель отображения меню">
+                <svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.1818 1.15039V4.15039L0 4.15039L1.26664e-07 1.15039L23.1818 1.15039Z" fill="#4BB1BC"/>
+                  <path d="M23.1818 1.15039V4.15039L0 4.15039L1.26664e-07 1.15039L23.1818 1.15039Z" fill="#4BB1BC"/>
+                  <path d="M23.1818 1.15039V4.15039L0 4.15039L1.26664e-07 1.15039L23.1818 1.15039Z" fill="currentColor"/>
+                  <path d="M32 8.15039V11.1504L0 11.1504L1.74846e-07 8.15039L32 8.15039Z" fill="#4BB1BC"/>
+                  <path d="M32 8.15039V11.1504L0 11.1504L1.74846e-07 8.15039L32 8.15039Z" fill="#4BB1BC"/>
+                  <path d="M32 8.15039V11.1504L0 11.1504L1.74846e-07 8.15039L32 8.15039Z" fill="currentColor"/>
+                  <path d="M32 15.1504V18.1504L0 18.1504L1.74846e-07 15.1504L32 15.1504Z" fill="#4BB1BC"/>
+                  <path d="M32 15.1504V18.1504L0 18.1504L1.74846e-07 15.1504L32 15.1504Z" fill="#4BB1BC"/>
+                  <path d="M32 15.1504V18.1504L0 18.1504L1.74846e-07 15.1504L32 15.1504Z" fill="currentColor"/>
+                  </svg>
+              </button>
               <button class="btn btn--orange navigation__button-mobile" type="button"><span>Связаться</span></button>
             </div>
 
             <ul class="navigation__list">
                 <li class="navigation__item navigation__item--catalog">
-                  <a href="#" class="navigation__link">Каталог</a>
                   <svg width="26" height="26" viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6ZM6 4C4.89543 4 4 4.89543 4 6C4 7.10457 4.89543 8 6 8C7.10457 8 8 7.10457 8 6C8 4.89543 7.10457 4 6 4Z" fill="currentColor"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20C0 16.6863 2.68629 14 6 14C9.31371 14 12 16.6863 12 20C12 23.3137 9.31371 26 6 26C2.68629 26 0 23.3137 0 20ZM6 18C4.89543 18 4 18.8954 4 20C4 21.1046 4.89543 22 6 22C7.10457 22 8 21.1046 8 20C8 18.8954 7.10457 18 6 18Z" fill="currentColor"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14 6C14 2.68629 16.6863 0 20 0C23.3137 0 26 2.68629 26 6C26 9.31371 23.3137 12 20 12C16.6863 12 14 9.31371 14 6ZM20 4C18.8954 4 18 4.89543 18 6C18 7.10457 18.8954 8 20 8C21.1046 8 22 7.10457 22 6C22 4.89543 21.1046 4 20 4Z" fill="currentColor"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14 20C14 16.6863 16.6863 14 20 14C23.3137 14 26 16.6863 26 20C26 23.3137 23.3137 26 20 26C16.6863 26 14 23.3137 14 20ZM20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18Z" fill="currentColor"/>
                     </svg>
+                  <a href="#" target="_blank" class="navigation__link">Каталог</a>
                 </li>
-                <li class="navigation__item navigation__item--apple"><a class="navigation__link" href="#">Ремонт apple</a>
-                  <ul class="navigation__sublist">
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone</a>
-                      <ul class="navigation__sublist">
-                        <li class="navigation__subitem">
-                          <a class="navigation__sublink" href="#">Iphone 4</a>
-                        </li>
-                        <li class="navigation__subitem">
-                          <a class="navigation__sublink" href="#">Iphone 5</a>
-                        </li>
-                        <li class="navigation__subitem">
-                          <a class="navigation__sublink" href="#">Iphone 6</a>
-                        </li>
-                        <li class="navigation__subitem">
-                          <a class="navigation__sublink" href="#">Iphone 7</a>
-                        </li>
-                        <li class="navigation__subitem">
-                          <a class="navigation__sublink" href="#">Iphone 8</a>
-                        </li>
-                        <li class="navigation__subitem">
-                          <a class="navigation__sublink" href="#">Iphone X</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Ipad</a>
-                      <ul class="navigation__sublist">
-                        <li class="navigation__subitem"><a class="navigation__sublink" href="#">Ipad 5</a></li>
-                        <li class="navigation__subitem"><a class="navigation__sublink" href="#">Ipad 6</a></li>
-                        <li class="navigation__subitem"><a class="navigation__sublink" href="#">Ipad 7</a></li>
-                      </ul>
-                    </li>
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Macbook</a>
-                      <ul class="navigation__sublist">
-                        <li class="navigation__subitem"><a class="navigation__sublink" href="#">Macbook Air</a></li>
-                        <li class="navigation__subitem"><a class="navigation__sublink" href="#">Macbook Pro</a></li>
-                        <li class="navigation__subitem"><a class="navigation__sublink" href="#">Macbook</a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                <li class="navigation__item navigation__item--apple">
                   <svg width="21" height="24" viewBox="0 0 21 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8985 0.0714487C13.8597 0.279634 12.7977 0.847269 12.0654 1.58585C11.0337 2.62622 10.4142 4.05547 10.4573 5.29575L10.4706 5.67819L10.8819 5.6724C11.8477 5.65875 12.7923 5.20711 13.7001 4.32508C14.8553 3.20264 15.4627 1.87022 15.4627 0.458164V0L15.3373 0.00432186C15.2684 0.00671268 15.0709 0.0369198 14.8985 0.0714487ZM14.1178 5.77249C13.6262 5.86551 13.1803 5.99387 12.4994 6.23856C12.1859 6.35116 11.6731 6.52661 11.3596 6.62836C10.5826 6.88068 10.5068 6.87236 9.08016 6.37714C7.55168 5.84661 7.24377 5.77456 6.50435 5.77447C4.54232 5.77419 2.67789 6.8468 1.54846 8.62552C1.11212 9.3127 0.725659 10.3412 0.545581 11.2943C0.455131 11.7731 0.442868 11.9812 0.444463 13.0116C0.445922 13.9885 0.462654 14.2849 0.544578 14.7893C0.88504 16.8855 1.70561 19.0285 2.8039 20.6898C3.74646 22.1155 4.70986 23.1759 5.47859 23.6336C5.95336 23.9163 6.26355 24.0001 6.83342 24C7.39645 23.9999 7.82449 23.9021 8.6492 23.5851C9.74631 23.1634 10.263 23.0601 11.1089 23.0933C11.7851 23.1199 12.2811 23.2324 13.0485 23.5332C14.684 24.1743 15.6202 24.1523 16.648 23.4485C17.5793 22.8106 18.9363 21.0417 19.7439 19.4126C20.0117 18.8725 20.4233 17.8697 20.4438 17.7075C20.4521 17.642 20.3672 17.5743 20.0952 17.4291C18.8419 16.7601 17.8525 15.62 17.4523 14.3833C17.1567 13.47 17.1134 12.2047 17.347 11.3009C17.6414 10.1619 18.2733 9.2521 19.3071 8.47849C19.5535 8.29412 19.7786 8.13536 19.8074 8.1257C19.8732 8.10359 19.4758 7.59572 19.1491 7.28423C18.4047 6.57447 17.4339 6.08509 16.2819 5.83875C15.6581 5.70537 14.6377 5.6741 14.1178 5.77249Z" fill="currentColor"/>
                     </svg>
-                </li>
-                <li class="navigation__item navigation__item--phones" ><a class="navigation__link" href="#">Ремонт смартфонов</a>
+                  <a class="navigation__link" target="_blank" href="#">Ремонт apple</a>
                   <ul class="navigation__sublist">
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone X</a></li>
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone Xs</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Iphone</a>
+                      <ul class="navigation__subsublist">
+                        <li class="navigation__subitem">
+                          <a class="navigation__sublink" href="#" target="_blank">Iphone 4</a>
+                        </li>
+                        <li class="navigation__subitem">
+                          <a class="navigation__sublink" href="#" target="_blank">Iphone 5</a>
+                        </li>
+                        <li class="navigation__subitem">
+                          <a class="navigation__sublink" href="#" target="_blank">Iphone 6</a>
+                        </li>
+                        <li class="navigation__subitem">
+                          <a class="navigation__sublink" href="#" target="_blank">Iphone 7</a>
+                        </li>
+                        <li class="navigation__subitem">
+                          <a class="navigation__sublink" href="#" target="_blank">Iphone 8</a>
+                        </li>
+                        <li class="navigation__subitem">
+                          <a class="navigation__sublink" href="#" target="_blank">Iphone X</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Ipad</a>
+                      <ul class="navigation__subsublist">
+                        <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Ipad 5</a></li>
+                        <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Ipad 6</a></li>
+                        <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Ipad 7</a></li>
+                      </ul>
+                    </li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Macbook</a>
+                      <ul class="navigation__subsublist">
+                        <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Macbook Air</a></li>
+                        <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Macbook Pro</a></li>
+                        <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Macbook</a></li>
+                      </ul>
+                    </li>
                   </ul>
+                </li>
+                <li class="navigation__item navigation__item--phones" >
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1563 14.8749C15.0831 13.5049 15.7195 11.4371 18.1387 14.0658C20.5564 16.6946 20.3139 17.6587 18.3871 19.0287C11.0987 24.2706 -5.46969 6.86329 1.61738 0.99062C3.54421 -0.379324 3.46778 -0.586109 5.88697 2.04134C8.30469 4.67138 7.00397 5.02808 5.07861 6.39932C3.15179 7.76926 11.2295 16.2448 13.1563 14.8749Z" fill="currentColor"/>
                   </svg>
+                  <a class="navigation__link" href="#" target="_blank">Ремонт смартфонов</a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Samsung</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Xiaomi</a></li>
+                  </ul>
                 </li>
                 <li class="navigation__item navigation__item--tablet">
-                  <a class="navigation__link" href="#">Ремонт планшетов</a>
-                  <ul class="navigation__sublist">
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone X</a></li>
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone Xs</a></li>
-                  </ul>
                   <svg width="27" height="26" viewBox="0 0 27 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33337 5C7.78109 5 7.33337 5.44772 7.33337 6V20C7.33337 20.5523 7.78109 21 8.33337 21H18.3334C18.8857 21 19.3334 20.5523 19.3334 20V6C19.3334 5.44772 18.8857 5 18.3334 5H8.33337ZM5.33337 6C5.33337 4.34315 6.67652 3 8.33337 3H18.3334C19.9902 3 21.3334 4.34315 21.3334 6V20C21.3334 21.6569 19.9902 23 18.3334 23H8.33337C6.67652 23 5.33337 21.6569 5.33337 20V6Z" fill="black"/>
                     <path d="M14.3334 19C14.3334 19.5523 13.8857 20 13.3334 20C12.7811 20 12.3334 19.5523 12.3334 19C12.3334 18.4477 12.7811 18 13.3334 18C13.8857 18 14.3334 18.4477 14.3334 19Z" fill="currentColor"/>
                     </svg>
-                </li>
-                <li class="navigation__item navigation__item--notebook"><a class="navigation__link" href="#">Ремонт ноутбуков</a>
+                  <a class="navigation__link" href="#" target="_blank">Ремонт планшетов</a>
                   <ul class="navigation__sublist">
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone X</a></li>
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#">Iphone Xs</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Samsung</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Xiaomi</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Lenovo</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Realme</a></li>
                   </ul>
+                </li>
+                <li class="navigation__item navigation__item--notebook">
                   <svg width="27" height="26" viewBox="0 0 27 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_701_602)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77771 6C7.22543 6 6.77771 6.44772 6.77771 7V16H20.7777V7C20.7777 6.44772 20.33 6 19.7777 6H7.77771ZM4.77771 7C4.77771 5.34315 6.12086 4 7.77771 4H19.7777C21.4346 4 22.7777 5.34315 22.7777 7V18H4.77771V7Z" fill="currentColor"/>
@@ -150,6 +168,11 @@
                     </clipPath>
                     </defs>
                     </svg>
+                  <a class="navigation__link" href="#" target="_blank">Ремонт ноутбуков</a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Acer</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Asus</a></li>
+                  </ul>
                 </li>
               </ul>
           </nav>
@@ -191,7 +214,7 @@
           <div class="intro__inner-img">
             <picture>
               <source type="image/webp" srcset="img/intro-bg.webp, img/intro-bg@2x.webp 2x">
-              <img src="img/intro-bg.jpg" srcset="img/intro-bg@2x.jpg 2x" width="810" height="835" alt="фоновая картинка">
+              <img src="img/intro-bg.jpg" srcset="img/intro-bg@2x.jpg 2x" width="976" height="1030" alt="фоновая картинка">
             </picture>
           </div>
         </div>

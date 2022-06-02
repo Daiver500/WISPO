@@ -1,0 +1,157 @@
+.header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header__top {
+  position: relative;
+  margin-bottom: 31px;
+}
+
+.header__top:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 75px;
+  width: 100%;
+  border-bottom: 1px solid $color-white-smoke;
+}
+
+.header__logo-wrapper {
+  min-width: 315px;
+  max-height: 50px;
+  margin-right: 40px;
+}
+
+.header__top-wrapper,
+.header__bottom-wrapper {
+  display: flex;
+}
+
+.header__top-wrapper {
+  align-items: center;
+}
+
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+.header__item {
+  position: relative;
+  transition: 0.3s ease;
+}
+
+@media (hover: hover), screen and (min-width: 0\0) {
+  .header__item:hover,
+  .header__item:focus,
+  .header__phone:hover,
+  .header__phone:focus {
+    opacity: 0.5;
+  }
+}
+
+.header__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__item:first-child {
+  margin-right: 40px;
+}
+
+.header__item:nth-child(2):before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background-image: url('../img/svg/icon-star.svg');
+  background-repeat: no-repeat;
+}
+
+.header__item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 70px;
+  border-bottom: 1px solid $color-white-smoke;
+}
+
+.header__link {
+  color: $color-default-black;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.header__contacts {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.header__text {
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.header__text-wrapper {
+  position: relative;
+}
+
+.header__text-wrapper svg {
+  position: absolute;
+  right: 205px;
+  top: 4px;
+}
+
+.header__phone {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+  position: relative;
+  color: $color-default-black;
+  transition: 0.3s ease;
+}
+
+.header__phone:before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/svg/icon-phone.svg');
+  background-repeat: no-repeat;
+}
+
+.header__logo-mobile,
+.navigation__toggle-mobile,
+.navigation__button-mobile  {
+  display: none;
+}
+
+.show {
+  opacity: 0.5;
+  animation: show 0.3s 0.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 1.5s;
+}
+
+@keyframes show {
+  0% {
+    opacity:0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

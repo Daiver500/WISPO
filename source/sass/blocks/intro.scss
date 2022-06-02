@@ -1,3 +1,80 @@
 .intro {
   margin-bottom: 120px;
+  overflow: hidden;
+  border-bottom: 2px solid $color-white-smoke;
+}
+
+.intro__inner {
+  min-height: 835px;
+  position: relative;
+  display: flex;
+}
+
+.intro__inner .title,
+.intro__inner  .text-medium {
+  margin-bottom: 60px;
+}
+
+.intro__inner .btn--orange {
+  max-width: 412px;
+}
+
+.intro__inner-block {
+  display: flex;
+  flex-direction: column;
+  min-width: 53.7%;
+  margin-top: 120px;
+}
+
+.intro__inner-repairs {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  bottom: 100px;
+  right: 75px;
+  background: $color-default-white;
+  box-shadow: 0px 10px 30px -6px rgba(35, 25, 4, 0.15);
+  border-radius: 100px;
+  padding: 20px 40px;
+}
+
+.intro__inner-repairs-title,
+.intro__inner-repairs-text {
+  margin: 0;
+}
+
+.intro__inner-repairs-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  background: linear-gradient(270deg, #FFCC00 -25.99%, #FFA300 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #FFCC00;
+}
+
+.intro__inner-repairs-text {
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 150px;
+}
+
+.intro__inner-smile {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.intro__inner-img {
+  position: relative;
+  min-height: 835px;
+  min-width: 810px;
+}
+
+.intro__inner-img img {
+  position: absolute;
+  top: 0;
+  left: 85px;
 }
