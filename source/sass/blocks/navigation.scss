@@ -57,6 +57,16 @@
   z-index: 10;
 }
 
+.navigation__item:before {
+  content: "";
+  position: absolute;
+  right: -50px;
+  top: 0;
+  width: 1px;
+  height: 28px;
+  border-right: 1px solid $color-whisper;
+}
+
 .navigation__subitem {
   z-index: 20;
 }

@@ -1,7 +1,8 @@
 '"use strict';
 
 const modal = () => {
-  const openModalButton = document.querySelector('.navigation__btn');
+  const openModalButton = document.querySelector('.intro__button');
+  const closeModalButton = document.querySelector('.modal__close');
   const modalWindow = document.querySelector('.modal');
   const body = document.getElementsByTagName('body');
 
@@ -33,6 +34,7 @@ const modal = () => {
   };
 
   openModalButton.addEventListener('click', openModal);
+  closeModalButton.addEventListener('click', closeModal);
 
 };
 

@@ -29,7 +29,7 @@ module.exports = {
       {
         test: /\.(scss)$/,
         use: [
-          //MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
           "sass-loader",
@@ -44,7 +44,7 @@ module.exports = {
       },
     ],
   },
-  /*plugins: [
+  plugins: [
     new MiniCssExtractPlugin({
       filename: 'style.min.css',
     }),
@@ -65,5 +65,5 @@ module.exports = {
       new CssMinimizerPlugin(),
     ],
     minimize: true,
-  }*/
+  }
 };
