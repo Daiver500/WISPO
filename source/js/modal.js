@@ -39,6 +39,7 @@ const modal = () => {
     modalPhone.addEventListener('keyup', validateCardNumber);
     modalPhone.addEventListener('keydown', validateCardNumber);
     body[0].classList.add('no-scroll');
+    body[0].style.paddingRight = '17px';
   };
 
   const closeModal = () => {
@@ -49,7 +50,9 @@ const modal = () => {
     modalPhone.addEventListener('keyup', validateCardNumber);
     modalPhone.addEventListener('keydown', validateCardNumber);
     body[0].classList.remove('no-scroll');
+    body[0].style.paddingRight = '0';
   };
+
 
   const closeModalSuccess = () => {
     modalWindowSuccess.classList.remove('is-active');
