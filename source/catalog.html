@@ -23,10 +23,10 @@
         <div class="header__top-wrapper">
 
           <div class="header__logo-wrapper">
-            <span class="header__logo">
+            <a href="index.html" class="header__logo">
               <img class="header__logo-desktop" src="./img/logo-desktop.png" width="315" height="50" alt="логотип">
               <img class="header__logo-mobile" src="./img/logo-mobile.png" width="168" height="20" alt="логотип">
-            </span>
+            </a>
           </div>
 
           <div class="header__info">
@@ -80,15 +80,15 @@
             </div>
 
             <ul class="navigation__list">
-                <li class="navigation__item navigation__item--catalog">
-                  <a href="catalog.html" target="_blank" class="navigation__link">
+                <li class="navigation__item navigation__item--catalog is-active">
+                  <span class="navigation__link">
                   <svg width="26" height="26" viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6ZM6 4C4.89543 4 4 4.89543 4 6C4 7.10457 4.89543 8 6 8C7.10457 8 8 7.10457 8 6C8 4.89543 7.10457 4 6 4Z" fill="currentColor"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20C0 16.6863 2.68629 14 6 14C9.31371 14 12 16.6863 12 20C12 23.3137 9.31371 26 6 26C2.68629 26 0 23.3137 0 20ZM6 18C4.89543 18 4 18.8954 4 20C4 21.1046 4.89543 22 6 22C7.10457 22 8 21.1046 8 20C8 18.8954 7.10457 18 6 18Z" fill="currentColor"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14 6C14 2.68629 16.6863 0 20 0C23.3137 0 26 2.68629 26 6C26 9.31371 23.3137 12 20 12C16.6863 12 14 9.31371 14 6ZM20 4C18.8954 4 18 4.89543 18 6C18 7.10457 18.8954 8 20 8C21.1046 8 22 7.10457 22 6C22 4.89543 21.1046 4 20 4Z" fill="currentColor"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14 20C14 16.6863 16.6863 14 20 14C23.3137 14 26 16.6863 26 20C26 23.3137 23.3137 26 20 26C16.6863 26 14 23.3137 14 20ZM20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18Z" fill="currentColor"/>
                     </svg>
-                  <span>Каталог</span></a>
+                  <span>Каталог</span></span>
                 </li>
                 <li class="navigation__item navigation__item--apple">
                   <a class="navigation__link" target="_blank" href="#">
@@ -185,187 +185,23 @@
       </div>
    </header>
   <main class="main">
-    <section class="intro">
-      <div class="container">
-        <div class="intro__inner">
-          <div class="intro__inner-block">
-            <h1 class="title">Сервисный центр</h1>
-            <p class="text-medium">Ремонт планшетов в&nbsp;Челябинске. Бесплатно продиагностируем и&nbsp;быстро починим любую поломку. <span>Гарантия 3&nbsp;месяца</span></p>
-            <button type="button" class="btn btn--orange intro__button"><span>Записаться на диагностику</span></button>
-            <div class="advantages-list">
-              <div class="advantages-card">
-                <img class="advantages-card__img" src="img/svg/icon-guitar.svg" width="70" height="70" alt="иконка гитары">
-                <p class="advantages-card__text">Починим даже&nbsp;то, от&nbsp;чего отказались другие</p>
-              </div>
-              <div class="advantages-card">
-                <img class="advantages-card__img" src="img/svg/icon-shield.svg" width="70" height="70" alt="иконка щит">
-                <p class="advantages-card__text">Гарантия нашего сервиса 3&nbsp;месяца</p>
-              </div>
-              <div class="advantages-card">
-                <img class="advantages-card__img" src="img/svg/icon-number.svg" width="70" height="70" alt="иконка число">
-                <p class="advantages-card__text">Собственная выгодная бонусная система</p>
-              </div>
-              <div class="advantages-card">
-                <img class="advantages-card__img" src="img/svg/icon-loop.svg" width="70" height="70" alt="иконка лупа">
-                <p class="advantages-card__text">Бесплатная диагностика даже при отказе от&nbsp;ремонта</p>
-              </div>
+    <section class="catalog">
+      <div class="container container--catalog">
+        <div class="catalog__inner">
+          <div class="catalog__text-wrapper">
+
+            <div class="text text--orange">
+              <p>Восстановление техники проводится в&nbsp;специальных помещениях с&nbsp;использованием профессионального оборудования и&nbsp;стендов для сборки/разборки девайсов. Это позволяет выполнять ремонт в&nbsp;разы быстрее. Следующий этап включает в&nbsp;себя финальное тестирование техники и&nbsp;возврат ее&nbsp;владельцу. Мы&nbsp;в&nbsp;&laquo;Белом Сервисе&raquo; стремимся обеспечивать наивысший уровень качества и&nbsp;поэтому вместе с&nbsp;работоспособной техникой пользователь получает трехмесячную гарантию на&nbsp;все произведенные нами ремонты.</p>
             </div>
-          </div>
-          <div class="intro__inner-repairs">
-            <p class="intro__inner-repairs-title">12585</p>
-            <img class="intro__inner-smile" src="img/svg/icon-smile.svg" width="60" height="60" alt="иконка смайлик">
-            <p class="intro__inner-repairs-text">Выполненных ремонтов</p>
-          </div>
-          <div class="intro__inner-img">
-            <picture>
-              <source type="image/webp" srcset="img/intro-bg.webp, img/intro-bg@2x.webp 2x">
-              <img src="img/intro-bg.jpg" srcset="img/intro-bg@2x.jpg 2x" width="976" height="1030" alt="фоновая картинка">
-            </picture>
+            <div class="text text--grey">
+              <p>Восстановление техники проводится в&nbsp;специальных помещениях с&nbsp;использованием профессионального оборудования и&nbsp;стендов для сборки/разборки девайсов. Это позволяет выполнять ремонт в&nbsp;разы быстрее. Следующий этап включает в&nbsp;себя финальное тестирование техники и&nbsp;возврат ее&nbsp;владельцу. Мы&nbsp;в&nbsp;&laquo;Белом Сервисе&raquo; стремимся обеспечивать наивысший уровень качества и&nbsp;поэтому вместе с&nbsp;работоспособной техникой пользователь получает трехмесячную гарантию на&nbsp;все произведенные нами ремонты.Восстановление техники проводится в&nbsp;специальных помещениях с&nbsp;использованием профессионального</p>
+            </div>
+            <div class="text text--black">
+              <p>Восстановление техники проводится в&nbsp;специальных помещениях с&nbsp;использованием профессионального оборудования и&nbsp;стендов для сборки/разборки девайсов. Это позволяет выполнять ремонт в&nbsp;разы быстрее. Следующий этап включает в&nbsp;себя финальное тестирование </p>
+            </div>
+
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="specialists">
-      <div class="container">
-        <div class="specialists__inner">
-
-          <div class="specialists__header">
-            <h2 class="title title--medium">Ремонт осуществляется
-              первоклассными специалистами</h2>
-            <p class="text-medium">Средний опыт работы наших мастеров 4 года</p>
-          </div>
-
-          <div class="workers-slider swiper ">
-            <div class="workers-list swiper-wrapper ">
-              <div class="worker-card swiper-slide">
-                <div class="worker-card__image">
-                  <picture>
-                    <source type="image/webp" srcset="img/worker-1.webp, img/worker-1@2x.webp 2x">
-                    <img src="img/worker-1.jpg" srcset="img/worker-1@2x.jpg 2x" width="223" height="223" alt="фото специалиста">
-                  </picture>
-                </div>
-                <div class="worker-card__text-wrapper">
-                  <p class="title title--tiny">Илья</p>
-                  <div class="worker-card__upper-text">
-                    <p class="worker-card__text">Мастер по&nbsp;ремонту, опыт 5&nbsp;лет. В&nbsp;&laquo;Белом Сервисе&raquo; с&nbsp;июля 2020</p>
-                    <p class="worker-card__task">Более 4&nbsp;800 выполненных работ</p>
-                  </div>
-                  <p class="worker-card__tip">Определю любую причину поломки!</p>
-                </div>
-              </div>
-              <div class="worker-card swiper-slide">
-                <div class="worker-card__image">
-                  <picture>
-                    <source type="image/webp" srcset="img/worker-2.webp, img/worker-2@2x.webp 2x">
-                    <img src="img/worker-2.jpg" srcset="img/worker-2@2x.jpg 2x" width="223" height="223" alt="фото специалиста">
-                  </picture>
-                </div>
-                <div class="worker-card__text-wrapper">
-                  <p class="title title--tiny">Александр</p>
-                  <div class="worker-card__upper-text">
-                    <p class="worker-card__text">Мастер по&nbsp;ремонту, опыт 4,5&nbsp;года. В&nbsp;&laquo;Белом Сервисе&raquo; с&nbsp;августа 2020</p>
-                    <p class="worker-card__task">Более 5&nbsp;200 выполненных работ</p>
-                  </div>
-                  <p class="worker-card__tip">Верну к&nbsp;жизни, как самые первые модели, так и&nbsp;новинки смартфонов.</p>
-                </div>
-              </div>
-              <div class="worker-card swiper-slide">
-                <div class="worker-card__image">
-                  <picture>
-                    <source type="image/webp" srcset="img/worker-3.webp, img/worker-3@2x.webp 2x">
-                    <img src="img/worker-3.jpg" srcset="img/worker-3@2x.jpg 2x" width="223" height="223" alt="фото специалиста">
-                  </picture>
-                </div>
-                <div class="worker-card__text-wrapper">
-                  <p class="title title--tiny">Андрей</p>
-                  <div  class="worker-card__upper-text">
-                    <p class="worker-card__text">Мастер по&nbsp;ремонту и&nbsp;переклейке дисплеев, опыт 5&nbsp;лет. В&nbsp;&laquo;Белом Сервисе&raquo; с&nbsp;сентября 2020</p>
-                    <p class="worker-card__task">Более 4&nbsp;800 выполненных работ</p>
-                  </div>
-                  <p class="worker-card__tip">Ремонт Apple&nbsp;– мой конек!</p>
-                </div>
-              </div>
-              <div class="worker-card swiper-slide">
-                <div class="worker-card__image">
-                  <picture>
-                    <source type="image/webp" srcset="img/worker-4.webp, img/worker-4@2x.webp 2x">
-                    <img src="img/worker-4.jpg" srcset="img/worker-4@2x.jpg 2x" width="223" height="223" alt="фото специалиста">
-                  </picture>
-                </div>
-                <div class="worker-card__text-wrapper">
-                  <p class="title title--tiny">Дмитрий</p>
-                  <div  class="worker-card__upper-text">
-                    <p class="worker-card__text">Мастер по&nbsp;ремонту, опыт 9&nbsp;лет.В&nbsp;&laquo;Белом Сервисе&raquo; с&nbsp;марта 2020</p>
-                    <p class="worker-card__task">Более 4&nbsp;800 выполненных работ</p>
-                  </div>
-                  <p class="worker-card__tip">Мы&nbsp;даем гарантию
-                    и&nbsp;исполняем&nbsp;ее. На&nbsp;технику&nbsp;– это всегда год.</p>
-                </div>
-              </div>
-              <div class="worker-card swiper-slide">
-                <div class="worker-card__image">
-                  <picture>
-                    <source type="image/webp" srcset="img/worker-4.webp, img/worker-4@2x.webp 2x">
-                    <img src="img/worker-4.jpg" srcset="img/worker-4@2x.jpg 2x" width="223" height="223" alt="фото специалиста">
-                  </picture>
-                </div>
-                <div class="worker-card__text-wrapper">
-                  <p class="title title--tiny">Дмитрий</p>
-                  <div  class="worker-card__upper-text">
-                    <p class="worker-card__text">Мастер по&nbsp;ремонту, опыт 9&nbsp;лет.В&nbsp;&laquo;Белом Сервисе&raquo; с&nbsp;марта 2020</p>
-                    <p class="worker-card__task">Более 4&nbsp;800 выполненных работ</p>
-                  </div>
-                  <p class="worker-card__tip">Мы&nbsp;даем гарантию
-                    и&nbsp;исполняем&nbsp;ее. На&nbsp;технику&nbsp;&mdash; это всегда год.</p>
-                </div>
-              </div>
-              </div>
-            </div>
-          <div class="workers-pagination swiper-pagination"></div>
-          <button class="workers-btn workers-btn-left swiper-button-prev" type="button" aria-label="Кнопка влево" aria-pressed="false">
-            <svg width="10" height="14" viewBox="0 0 10 14" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 2L3 7L8 12" stroke="" stroke-width="3"/>
-            </svg>
-        </button>
-        <button class="workers-btn workers-btn-right swiper-button-next" type="button" aria-label="Кнопка вправо" aria-pressed="false">
-            <svg width="10" height="14" viewBox="0 0 10 14" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2 12L7 7L2 2" stroke="" stroke-width="3"/>
-            </svg>
-        </button>
-         </div>
-      </div>
-    </section>
-    <section class="service">
-      <div class="container">
-         <div class="service__inner">
-           <ul class="service__list">
-              <li class="service__item">
-                <picture class="service__picture">
-                  <source type="image/webp" srcset="img/shop-1.webp, img/shop-1@2x.webp 2x">
-                  <img src="img/shop-1.jpg" srcset="img/shop-1@2x.jpg 2x" width="745" height="478" alt="фото специалиста">
-                </picture>
-              </li>
-              <li class="service__item">
-                <p class="title title--large">Сервисные центры</p>
-                <p>Первый сервисный центр Белый Сервис распахнул свои двери 28&nbsp;марта 2012 года по&nbsp;адресу&nbsp;г. Челябинск, ул. Энгельса&nbsp;75.</p>
-                <p>На&nbsp;текущий момент &laquo;Белый Сервис&raquo; имеет три филиала со&nbsp;своими приемщиками и&nbsp;мастерами. Гибко распределяем рабочую нагрузку: если персонал на&nbsp;одной из&nbsp;точек перегружен заказами, то&nbsp;часть работ передается их&nbsp;менее загруженным коллегам из&nbsp;другого филиала.</p>
-                <a href="catalog.html" target="_blank" class="btn service__item-btn">Показать адреса</a>
-              </li>
-              <li class="service__item">
-                <picture class="service__picture">
-                  <source type="image/webp" srcset="img/shop-2.webp, img/shop-2@2x.webp 2x">
-                  <img src="img/shop-2.jpg" srcset="img/shop-2@2x.jpg 2x" width="745" height="478" alt="фото специалиста">
-                </picture>
-              </li>
-              <li class="service__item">
-                <picture class="service__picture">
-                  <source type="image/webp" srcset="img/shop-3.webp, img/shop-3@2x.webp 2x">
-                  <img src="img/shop-3.jpg" srcset="img/shop-3@2x.jpg 2x" width="745" height="478" alt="фото специалиста">
-                </picture>
-              </li>
-           </ul>
-         </div>
       </div>
     </section>
   </main>

@@ -11,6 +11,10 @@
   @include vp-1365 {
     margin-bottom: 200px;
   }
+
+  @include vp-1023 {
+    margin-bottom: 120px;
+  }
 }
 
 .intro__inner {
@@ -25,6 +29,10 @@
   @include vp-1365 {
     min-height: 631px;
   }
+
+  @include vp-1023 {
+    min-height: 775px;
+  }
 }
 
 .intro__inner .title,
@@ -33,6 +41,12 @@
 
   @include vp-1365 {
     margin-bottom: 40px;
+  }
+}
+
+.intro__inner .text-medium span {
+  @include vp-1023 {
+    display: none;
   }
 }
 
@@ -59,14 +73,21 @@
   flex-direction: column;
   min-width: 53.7%;
   margin-top: 120px;
+  margin-bottom: 80px;
 
   @include vp-1919 {
     margin-top: 80px;
+    margin-bottom: 80px;
     min-width: 60.7%;
   }
 
   @include vp-1365 {
+    margin-bottom: 48px;
     min-width: 61%;
+  }
+
+  @include vp-1023 {
+    min-width: 52%;
   }
 }
 
@@ -90,6 +111,11 @@
   @include vp-1365 {
     padding: 11px 23px;
     bottom: 60px;
+  }
+
+  @include vp-1023 {
+    right: 5px;
+    bottom: 100px;
   }
 }
 
@@ -119,6 +145,7 @@
   max-width: 150px;
 
   @include vp-1365 {
+    max-width: 105px;
     font-size: 14px;
     line-height: 16.8px;
   }

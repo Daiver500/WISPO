@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include vp-1023 {
+    padding: 14px 16px;
+  }
 }
 
 .worker-card__image {
@@ -12,6 +16,11 @@
 
   @include vp-1365 {
     margin-bottom: 32px;
+  }
+
+  @include vp-1023 {
+    max-height: 165px;
+    max-width: 165px;
   }
 }
 
@@ -47,16 +56,9 @@
     margin-bottom: 20px;
     padding: 0 40px;
   }
-}
 
-.worker-card__task,
-.worker-card__tip {
-  font-size: 16px;
-  line-height: 19.2px;
-
-  @include vp-1365 {
-    font-size: 14px;
-    line-height: 16.8px;
+  @include vp-1023 {
+    padding: 0 19px;
   }
 }
 
@@ -64,9 +66,17 @@
   padding-left: 34px;
   position: relative;
   margin-top: auto;
+  font-size: 16px;
+  line-height: 19.2px;
 
   @include vp-1365 {
     padding-right: 15px;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  @include vp-1023 {
+    padding-right: 10px;
   }
 }
 
@@ -90,6 +100,8 @@
   margin-top: 32px;
   min-width: 296px;
   align-self: center;
+  font-size: 16px;
+  line-height: 19.2px;
 
   @include vp-1919 {
     min-width: 279px;
@@ -98,11 +110,15 @@
   @include vp-1365 {
     min-width: 243px;
     padding-right: 32px;
+    font-size: 14px;
+    line-height: 16.8px;
   }
 
-  @include vp-767 {
+  @include vp-1023 {
+    min-width: 197px;
     font-size: 12px;
     line-height: 14.4px;
+    padding: 14px 10px;
   }
 }
 

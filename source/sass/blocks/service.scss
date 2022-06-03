@@ -30,6 +30,11 @@
     max-width: 264px;
     margin-bottom: 28px;
   }
+
+  @include vp-1023 {
+    min-height: 141px;
+    max-width: 197px;
+  }
 }
 
 .service__item img {

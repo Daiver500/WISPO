@@ -18,3 +18,112 @@
     line-height: 16.8px;
   }
 }
+
+.text {
+  font-size: 26px;
+  line-height: 36.4px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  margin-bottom: 73px;
+
+  @include vp-1919 {
+    font-size: 24px;
+  }
+
+  @include vp-1365 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+}
+
+.text p {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @include vp-1365 {
+    margin-bottom: 10px;
+  }
+}
+
+.text--orange,
+.text--black {
+  max-width: 796px;
+
+  @include vp-1919 {
+    max-width: 60%;
+  }
+
+  @include vp-1365 {
+    max-width: 60%;
+  }
+
+  @include vp-1023 {
+    max-width: 100%;
+  }
+}
+
+.text--orange {
+  color: $color-orange;
+  border: 1px solid $color-orange;
+}
+
+.text--grey {
+  color: $color-nobel;
+  max-width: 528px;
+  max-height: 520px;
+  padding: 0;
+
+  @include vp-1919 {
+    max-width: 36%;
+  }
+
+  @include vp-1365 {
+    max-width: 36%;
+    max-height: 225px;
+  }
+
+  @include vp-1023 {
+    max-width: 100%;
+    max-height: unset;
+    position: relative;
+    top: unset;
+    right: unset;
+  }
+}
+
+.text--grey p {
+  border: 1px solid $color-nobel;
+  position: relative;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  @include vp-1365 {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.text--black {
+  color: $color-default-black;
+  border: 1px solid $color-default-black;
+}
