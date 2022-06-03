@@ -23,6 +23,11 @@
   }
 }
 
+.btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 @media (hover: hover), screen and (min-width: 0\0) {
   .btn:hover,
   .btn:focus {
