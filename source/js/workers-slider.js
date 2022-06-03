@@ -24,16 +24,20 @@ const workersSlider = () => {
           slidesPerView: 4,
           spaceBetween: 30,
         },
-        1440: {
+        1919: {
           slidesPerView: 3,
-          spaceBetween: 33.5,
+          spaceBetween: 30,
         },
-        768: {
+        1365: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1023: {
           slidesPerView: 3,
           spaceBetween: 20.4,
         },
-        0: {
-          slidesPerView: 'auto',
+        767: {
+          slidesPerView: 3,
           spaceBetween: 20.4,
         },
       },

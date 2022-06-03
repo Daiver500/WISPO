@@ -8,6 +8,15 @@
   align-items: center;
   flex-grow: 1;
   margin-bottom: 40px;
+
+  @include vp-1919 {
+    max-width: 330px;
+  }
+
+  @include vp-1365 {
+    margin-bottom: 32px;
+    max-width: 255px;
+  }
 }
 
 .advantages-card__img {
@@ -17,6 +26,12 @@
   border-radius: 10px;
   padding: 10px;
   margin-right: 20px;
+
+  @include vp-1365 {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 16px;
+  }
 }
 
 .advantages-card__text {

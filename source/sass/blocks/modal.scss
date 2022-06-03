@@ -36,6 +36,17 @@
   background-color: rgba(0, 0, 0, 0.8);
   min-height: 100vh;
   z-index: 30;
+  transform: scale(1.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(.55,0,.1,1), transform .6s cubic-bezier(.55,0,.1,1), visibility .6s cubic-bezier(.55,0,.1,1);
+}
+
+.is-active {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal__data {
@@ -61,23 +72,24 @@
 }
 
 .modal__text {
-  font-size: 16px;
-  line-height: 22px;
-  max-width: 460px;
-  //color: $black;
+  font-size: 14px;
+  line-height: 17px;
+  max-width: 100%;
 }
 
-.modal__form input {
+.modal input {
   padding: 16px;
-  padding-left: 5px;
   margin-bottom: 30px;
   min-width: 380px;
-  //background-color: $white;
   border: 0;
-  //color: $black;
+  color: $color-default-black;
+  border: 1px solid $color-default-black;
+  border-radius: 10px;
+  outline: 0;
+  transition: 0.3s ease;
 }
 
-.modal__form input::placeholder {
+.modal input::placeholder {
   font-size: 16px;
   line-height: 21px;
 }
@@ -85,22 +97,14 @@
 .modal__button {
   font-size: 19px;
   line-height: 22px;
-  //color: $black;
   text-transform: uppercase;
-  //background-color: $red;
   border: none;
   padding: 14px 45px;
   cursor: pointer;
   margin-bottom: 34px;
   border-radius: 15px;
   height: 50px;
-}
-
-.modal__button:hover,
-.modal__button:focus {
-  //background-color: $white;
-  //color: $black;
-  //border: 1px solid $black;
+  border: 1px solid $color-default-black;
 }
 
 .modal__button:disabled {
@@ -116,7 +120,6 @@
 }
 
 .modal-success__text {
-  //color: $black;
   font-size: 24px;
   line-height: 31px;
   margin-top: 0;
@@ -132,13 +135,14 @@
 .modal__close,
 .modal-success__close {
   position: absolute;
+  right: 20px;
   top: 20px;
-  right: 37px;
   width: 30px;
   height: 25px;
   border: none;
   background-color: inherit;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .modal__close:hover,
@@ -148,48 +152,17 @@
   opacity: 0.5;
 }
 
-.hidden {
-  display: none;
+.modal input:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.modal input:hover,
-.modal input:focus {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+.modal input:focus,
+.modal input:active {
+  border: 1px solid $color-orange;
 }
 
 .modal__label {
   position: relative;
 }
 
-.modal__label::after {
-  content: "";
-  position: absolute;
-  bottom: 28px;
-  left: 5px;
-  right: 0;
-  max-width: 364px;
-  //border-bottom: 1px solid $red;
-}
 
-.modal__animation {
-  animation-name: bounce;
-  animation-duration: 0.6s;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}

@@ -4,7 +4,6 @@
 
 .navigation__list {
   display: flex;
-  padding: 10px 0;
   position: relative;
 }
 
@@ -65,6 +64,10 @@
   width: 1px;
   height: 28px;
   border-right: 1px solid $color-whisper;
+
+  @include vp-1365 {
+    right: -33px;
+  }
 }
 
 .navigation__subitem {
@@ -73,6 +76,26 @@
 
 .navigation__item:not(:last-child) {
   margin-right: 115px;
+
+  @include vp-1919 {
+    margin-right: 76px;
+  }
+
+  @include vp-1365 {
+    margin-right: 44px;
+  }
+}
+
+.navigation__item:first-child {
+  @include vp-1365 {
+    margin-right: 78.5px;
+  }
+}
+
+.navigation__item:last-child {
+  @include vp-1365 {
+    display: none;
+  }
 }
 
 .navigation__item:not(:first-child):after {
@@ -94,6 +117,16 @@
   color: $color-default-black;
   width: 100%;
   transition: 0.3s ease;
+
+  @include vp-1919 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @include vp-1365 {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
 }
 
 .navigation__link {

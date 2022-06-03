@@ -1,5 +1,9 @@
 .specialists {
-  margin-bottom: 120px;
+  margin-bottom: 200px;
+
+  @include vp-1365 {
+    margin-bottom: 140px;
+  }
 }
 
 .specialists__header {
@@ -8,11 +12,24 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+
+  @include vp-1365 {
+    margin-bottom: 60px;
+  }
 }
 
 .specialists__header .title {
   margin-bottom: 40px;
   max-width: 1100px;
+
+  @include vp-1919 {
+    padding: 0 70px;
+  }
+
+  @include vp-1365 {
+    margin-bottom: 32px;
+  }
 }
 
 .specialists__inner {

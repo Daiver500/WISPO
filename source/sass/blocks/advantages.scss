@@ -1,4 +1,8 @@
 .advantages-list {
   display: flex;
   margin-top: 40px;
+
+  @include vp-1365 {
+    margin-top: 32px;
+  }
 }

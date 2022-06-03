@@ -54,6 +54,7 @@
     "node": "14.17.5"
   },
   "dependencies": {
+    "imask": "^6.4.2",
     "swiper": "^8.2.2"
   }
 }

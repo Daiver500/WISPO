@@ -1,5 +1,9 @@
 .service {
   margin-bottom: 120px;
+
+  @include vp-1365 {
+    margin-bottom: 80px;
+  }
 }
 
 .service__list {
@@ -12,26 +16,77 @@
 
 .service__item {
   margin-bottom: 30px;
-  max-height: 478px;
+  min-height: 478px;
   max-width: 745px;
   flex-grow: 1;
+
+  @include vp-1919 {
+    min-height: 537px;
+    max-width: 525px;
+  }
+
+  @include vp-1365 {
+    min-height: 191px;
+    max-width: 264px;
+    margin-bottom: 28px;
+  }
+}
+
+.service__item img {
+  object-fit: cover;
 }
 
 .service__item:nth-child(2n+1) {
   margin-right: 30px;
+
+  @include vp-1365 {
+    margin-right: 28px;
+  }
 }
 
 .service__item:nth-child(2) {
   overflow-y: auto;
+
+  @include vp-1365 {
+    max-width: 100%;
+    min-height: 286px;
+    margin-bottom: 40px;
+  }
+}
+
+.service__item:nth-child(1) {
+  @include vp-1365 {
+    order: 2;
+  }
+}
+
+.service__item:nth-child(3) {
+  @include vp-1365 {
+    order: 3;
+  }
+}
+
+.service__item:last-child {
+  @include vp-1365 {
+    order: 4;
+  }
 }
 
 .service__item .title {
   margin-bottom: 60px;
+
+  @include vp-1365 {
+    margin-bottom: 40px;
+  }
 }
 
 .service__item p {
   margin-bottom: 32px;
   margin-top: 0;
+
+  @include vp-1365 {
+    margin-bottom: 24px;
+  }
 }
 
 .service__item-btn {

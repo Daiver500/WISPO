@@ -2,6 +2,11 @@
   padding-bottom: 20px;
   padding-top: 20px;
   box-shadow: 0px 10px 30px -6px rgba(35, 25, 4, 0.15);
+
+  @include vp-1365 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
 }
 
 .header__top {
@@ -16,6 +21,10 @@
   top: 75px;
   width: 100%;
   border-bottom: 1px solid $color-white-smoke;
+
+  @include vp-1365 {
+    top: 70px;
+  }
 }
 
 .header__logo-wrapper {
@@ -31,6 +40,12 @@
 
 .header__top-wrapper {
   align-items: center;
+}
+
+.header__info {
+  @include vp-1919 {
+    display: none;
+  }
 }
 
 .header__list {
@@ -66,7 +81,7 @@
   content: "";
   position: absolute;
   left: -15px;
-  top: 6px;
+  top: 10px;
   width: 14px;
   height: 14px;
   background-image: url('../img/svg/icon-star.svg');
@@ -98,6 +113,11 @@
   line-height: 17px;
   margin-top: 0;
   margin-bottom: 5px;
+
+  @include vp-1365 {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .header__text-wrapper {
@@ -108,6 +128,11 @@
   position: absolute;
   right: 205px;
   top: 4px;
+
+  @include vp-1365 {
+    right: 177px;
+    top: 3px;
+  }
 }
 
 .header__phone {
@@ -117,6 +142,11 @@
   position: relative;
   color: $color-default-black;
   transition: 0.3s ease;
+
+  @include vp-1365 {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .header__phone:before {

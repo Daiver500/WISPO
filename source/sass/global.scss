@@ -41,13 +41,10 @@ body {
   padding: 0;
 }
 
-html {
-  font-family: "Montserrat", "Arial", sans-serif;
+body {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
-  background-color: $color-default-white;
-  color: $color-default-black;
 
   @include vp-1919 {
     font-size: 18px;
@@ -60,8 +57,15 @@ html {
   }
 }
 
+html {
+  font-family: "Montserrat", "Arial", sans-serif;
+  background-color: $color-default-white;
+  color: $color-default-black;
+}
+
 .no-scroll {
   overflow: hidden;
+  padding-right: 17px;
 }
 
 

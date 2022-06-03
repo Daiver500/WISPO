@@ -4,7 +4,7 @@
 }
 
 .workers-pagination.swiper-pagination {
-  bottom: -50px;
+  bottom: -80px;
 }
 
 .workers-btn.swiper-button-prev:after,
@@ -22,6 +22,16 @@
   position: absolute;
   top: 525px;
   transition: 0.3s ease;
+
+  @include vp-1919 {
+    top: 510px;
+  }
+
+  @include vp-1365 {
+    width: 56px;
+    height: 56px;
+    top: 495px;
+  }
 }
 
 .workers-btn svg {
@@ -30,10 +40,18 @@
 
 .workers-btn-left {
   left: -25px;
+
+  @include vp-1919 {
+    left: -30px;
+  }
 }
 
 .workers-btn-right {
   right: -25px;
+
+  @include vp-1919 {
+    right: -30px;
+  }
 }
 
 @media (hover: hover), screen and (min-width: 0\0) {
