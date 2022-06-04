@@ -10,6 +10,7 @@ const modal = () => {
   const body = document.getElementsByTagName('body');
   const submitButton = document.querySelector('.modal__button');
   const modalPhone = document.querySelector('.modal__phone');
+  const breakpoint = window.matchMedia('(min-width:1024px)');
   const MAX_CHARS = 16;
 
   const escPressHandler = (evt) => {
@@ -40,7 +41,9 @@ const modal = () => {
     modalPhone.addEventListener('keyup', validateCardNumber);
     modalPhone.addEventListener('keydown', validateCardNumber);
     body[0].classList.add('no-scroll');
-    body[0].style.paddingRight = '17px';
+    if (breakpoint.matches) {
+      body[0].style.paddingRight = '17px';
+    }
   };
 
   const closeModal = () => {

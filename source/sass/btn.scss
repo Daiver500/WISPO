@@ -70,6 +70,12 @@
   }
 }
 
+@media(min-width: 320px) and (max-width: 767px) {
+  .btn--orange {
+    padding: 18px 30px 18px 30px;
+  }
+}
+
 .btn--orange span {
   position: relative;
   z-index: 1;

@@ -10625,6 +10625,7 @@ var modal = function modal() {
   var body = document.getElementsByTagName('body');
   var submitButton = document.querySelector('.modal__button');
   var modalPhone = document.querySelector('.modal__phone');
+  var breakpoint = window.matchMedia('(min-width:1024px)');
   var MAX_CHARS = 16;
 
   var escPressHandler = function escPressHandler(evt) {
@@ -10657,7 +10658,10 @@ var modal = function modal() {
     modalPhone.addEventListener('keyup', validateCardNumber);
     modalPhone.addEventListener('keydown', validateCardNumber);
     body[0].classList.add('no-scroll');
-    body[0].style.paddingRight = '17px';
+
+    if (breakpoint.matches) {
+      body[0].style.paddingRight = '17px';
+    }
   };
 
   var closeModal = function closeModal() {

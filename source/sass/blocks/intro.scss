@@ -232,6 +232,12 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .intro__inner-img {
+    max-height: 240px;
+  }
+}
+
 .intro__inner-img img {
   position: absolute;
   top: 0;
@@ -274,5 +280,11 @@
   @include vp-1365 {
     left: 29px;
     top: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .intro__button:before {
+    left: 15px;
   }
 }
