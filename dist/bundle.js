@@ -10697,10 +10697,21 @@ var modal = function modal() {
     document.addEventListener('click', windowClickHandler);
   };
 
-  openModalButton.addEventListener('click', openModal);
-  headerButtonMobile.addEventListener('click', openModal);
-  closeModalButton.addEventListener('click', closeModal);
-  closeModalSuccessButton.addEventListener('click', closeModalSuccess);
+  if (openModalButton) {
+    openModalButton.addEventListener('click', openModal);
+  }
+
+  if (headerButtonMobile) {
+    headerButtonMobile.addEventListener('click', openModal);
+  }
+
+  if (closeModalButton) {
+    closeModalButton.addEventListener('click', closeModal);
+  }
+
+  if (closeModalSuccessButton) {
+    closeModalSuccessButton.addEventListener('click', closeModalSuccess);
+  }
 };
 
 

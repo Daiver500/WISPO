@@ -42,6 +42,20 @@ module.exports = {
           presets: ['@babel/preset-env'],
         },
       },
+      {
+        test: /\.(woff|woff2|ttf|otf|eot)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name][ext]'
+        }
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg|ico)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/img/[name][ext]'
+        }
+      }
     ],
   },
   plugins: [
@@ -58,7 +72,7 @@ module.exports = {
       ]
     }),
     new ImageminPlugin({
-      test: /\.(jpe?g|png|gif|svg)$/i
+      test: /\.(jpe?g|png)$/i
     }),
   ],
   optimization: {
