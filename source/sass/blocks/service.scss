@@ -35,6 +35,12 @@
     min-height: 141px;
     max-width: 197px;
   }
+
+  @include vp-767 {
+    min-height: 234px;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
 }
 
 .service__item img {
@@ -47,6 +53,10 @@
   @include vp-1365 {
     margin-right: 28px;
   }
+
+  @include vp-767 {
+    margin-right: 0;
+  }
 }
 
 .service__item:nth-child(2) {
@@ -56,6 +66,7 @@
     max-width: 100%;
     min-height: 286px;
     margin-bottom: 40px;
+    overflow-y: unset;
   }
 }
 
@@ -83,17 +94,30 @@
   @include vp-1365 {
     margin-bottom: 40px;
   }
+
+  @include vp-767 {
+    margin-bottom: 32px;
+  }
 }
 
 .service__item p {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   margin-top: 0;
 
   @include vp-1365 {
+    margin-bottom: 32px;
+  }
+
+  @include vp-767 {
     margin-bottom: 24px;
   }
 }
 
-.service__item-btn {
-  margin-top: 8px;
+.service__item-btn-wrapper {
+  min-height: 60px;
+  display: flex;
+
+  @include vp-1919 {
+    min-height: 50px;
+  }
 }

@@ -64,6 +64,10 @@
     padding-left: 50px;
     padding-right: 30px;
   }
+
+  @include vp-767 {
+    line-height: 17.07px;
+  }
 }
 
 .btn--orange span {

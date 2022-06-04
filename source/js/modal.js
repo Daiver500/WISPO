@@ -2,6 +2,7 @@
 
 const modal = () => {
   const openModalButton = document.querySelector('.intro__button');
+  const headerButtonMobile = document.querySelector('.header__button-mobile');
   const closeModalButton = document.querySelector('.modal__close');
   const modalWindow = document.querySelector('.modal');
   const modalWindowSuccess = document.querySelector('.modal-success');
@@ -78,8 +79,10 @@ const modal = () => {
   };
 
   openModalButton.addEventListener('click', openModal);
+  headerButtonMobile.addEventListener('click', openModal);
   closeModalButton.addEventListener('click', closeModal);
   closeModalSuccessButton.addEventListener('click', closeModalSuccess);
+
 };
 
 export {modal};

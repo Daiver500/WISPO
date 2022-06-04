@@ -22,13 +22,19 @@
       <div class="container">
         <div class="header__top-wrapper">
 
+          <div class="header__info-wrapper">
           <div class="header__logo-wrapper">
             <span class="header__logo">
               <img class="header__logo-desktop" src="./img/logo-desktop.png" width="315" height="50" alt="логотип">
               <img class="header__logo-mobile" src="./img/logo-mobile.png" width="168" height="20" alt="логотип">
             </span>
+            <p class="header__title-mobile is-hidden">Меню</p>
+            <button class="header__arrow-button" aria-label="кнопка переключения меню" type="button">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 11L2 6L7 1" stroke="black" stroke-width="2"/>
+                </svg>
+            </button>
           </div>
-
           <div class="header__info">
             <ul class="header__list">
               <li class="header__item">
@@ -53,6 +59,30 @@
             </div>
             <a class="header__phone" href="tel:+73512207704">+7 351 220 77 04</a>
           </div>
+          </div>
+
+          <div class="header__buttons-mobile">
+            <button class="header__toggle header__toggle--open" type="button" aria-label="Переключатель отображения меню">
+              <svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.1818 1.15039V4.15039L0 4.15039L1.26664e-07 1.15039L23.1818 1.15039Z" fill="#4BB1BC"/>
+                <path d="M23.1818 1.15039V4.15039L0 4.15039L1.26664e-07 1.15039L23.1818 1.15039Z" fill="#4BB1BC"/>
+                <path d="M23.1818 1.15039V4.15039L0 4.15039L1.26664e-07 1.15039L23.1818 1.15039Z" fill="currentColor"/>
+                <path d="M32 8.15039V11.1504L0 11.1504L1.74846e-07 8.15039L32 8.15039Z" fill="#4BB1BC"/>
+                <path d="M32 8.15039V11.1504L0 11.1504L1.74846e-07 8.15039L32 8.15039Z" fill="#4BB1BC"/>
+                <path d="M32 8.15039V11.1504L0 11.1504L1.74846e-07 8.15039L32 8.15039Z" fill="currentColor"/>
+                <path d="M32 15.1504V18.1504L0 18.1504L1.74846e-07 15.1504L32 15.1504Z" fill="#4BB1BC"/>
+                <path d="M32 15.1504V18.1504L0 18.1504L1.74846e-07 15.1504L32 15.1504Z" fill="#4BB1BC"/>
+                <path d="M32 15.1504V18.1504L0 18.1504L1.74846e-07 15.1504L32 15.1504Z" fill="currentColor"/>
+                </svg>
+            </button>
+            <button class="header__toggle header__toggle--close is-hidden" type="button" aria-label="Переключатель отображения меню">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6.00027 6.00027M6.00027 6.00027L10.9995 10.9995M6.00027 6.00027L1.00053 11M6.00027 6.00027L11 1.00054" stroke="black" stroke-width="2"/>
+                </svg>
+            </button>
+            <button class="btn btn--orange header__button-mobile" type="button"><span>Связаться</span></button>
+          </div>
+
 
         </div>
       </div>
@@ -61,24 +91,6 @@
     <div class="header__bottom">
       <div class="container">
           <nav class="navigation">
-
-            <div class="navigation__buttons-mobile">
-              <button class="navigation__toggle-mobile" type="button" aria-label="Переключатель отображения меню">
-                <svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23.1818 1.15039V4.15039L0 4.15039L1.26664e-07 1.15039L23.1818 1.15039Z" fill="#4BB1BC"/>
-                  <path d="M23.1818 1.15039V4.15039L0 4.15039L1.26664e-07 1.15039L23.1818 1.15039Z" fill="#4BB1BC"/>
-                  <path d="M23.1818 1.15039V4.15039L0 4.15039L1.26664e-07 1.15039L23.1818 1.15039Z" fill="currentColor"/>
-                  <path d="M32 8.15039V11.1504L0 11.1504L1.74846e-07 8.15039L32 8.15039Z" fill="#4BB1BC"/>
-                  <path d="M32 8.15039V11.1504L0 11.1504L1.74846e-07 8.15039L32 8.15039Z" fill="#4BB1BC"/>
-                  <path d="M32 8.15039V11.1504L0 11.1504L1.74846e-07 8.15039L32 8.15039Z" fill="currentColor"/>
-                  <path d="M32 15.1504V18.1504L0 18.1504L1.74846e-07 15.1504L32 15.1504Z" fill="#4BB1BC"/>
-                  <path d="M32 15.1504V18.1504L0 18.1504L1.74846e-07 15.1504L32 15.1504Z" fill="#4BB1BC"/>
-                  <path d="M32 15.1504V18.1504L0 18.1504L1.74846e-07 15.1504L32 15.1504Z" fill="currentColor"/>
-                  </svg>
-              </button>
-              <button class="btn btn--orange navigation__button-mobile" type="button"><span>Связаться</span></button>
-            </div>
-
             <ul class="navigation__list">
                 <li class="navigation__item navigation__item--catalog">
                   <a href="catalog.html" target="_blank" class="navigation__link">
@@ -97,7 +109,7 @@
                     </svg>
                     <span>Ремонт apple</span></a>
                   <ul class="navigation__sublist">
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Iphone</a>
+                    <li class="navigation__subitem"><a class="navigation__sublink navigation__sublink--iphone" href="#" target="_blank">Iphone</a>
                       <ul class="navigation__subsublist">
                         <li class="navigation__subitem">
                           <a class="navigation__sublink" href="#" target="_blank">Iphone 4</a>
@@ -119,14 +131,14 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Ipad</a>
+                    <li class="navigation__subitem"><a class="navigation__sublink navigation__sublink--ipad" href="#" target="_blank">Ipad</a>
                       <ul class="navigation__subsublist">
                         <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Ipad 5</a></li>
                         <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Ipad 6</a></li>
                         <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Ipad 7</a></li>
                       </ul>
                     </li>
-                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Macbook</a>
+                    <li class="navigation__subitem"><a class="navigation__sublink navigation__sublink--macbook" href="#" target="_blank">Macbook</a>
                       <ul class="navigation__subsublist">
                         <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Macbook Air</a></li>
                         <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Macbook Pro</a></li>
@@ -174,6 +186,90 @@
                     </defs>
                     </svg>
                   <span>Ремонт ноутбуков</span></a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Acer</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Asus</a></li>
+                  </ul>
+                </li>
+                <li class="navigation__item navigation__item--playstation navigation__item--add">
+                  <a class="navigation__link" href="#" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_6_8411)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.769 6.5293C9.18328 6.5293 8.75255 6.51861 8.39977 6.50985C7.97246 6.49924 7.65952 6.49147 7.32403 6.50898C6.80934 6.53585 6.30814 6.62759 5.33252 6.95153C3.73042 7.48348 2.53212 9.26102 2.19656 10.9322C1.96205 12.1001 1.94257 12.8974 2.10734 13.3757C2.17805 13.581 2.27387 13.7002 2.39293 13.7828C2.5222 13.8723 2.75526 13.9706 3.17833 13.9967C3.56645 14.0206 3.95206 13.8862 4.33229 13.6469C4.71512 13.406 5.02509 13.1025 5.26195 12.8665C6.23306 11.899 7.59767 11.1551 9.769 11.1551C11.9403 11.1551 13.3049 11.899 14.276 12.8665C14.5129 13.1025 14.8229 13.406 15.2057 13.6469C15.5859 13.8862 15.9715 14.0206 16.3597 13.9967C16.7827 13.9706 17.0158 13.8723 17.1451 13.7828C17.2641 13.7002 17.3599 13.581 17.4306 13.3757C17.5954 12.8974 17.5759 12.1001 17.3414 10.9322C17.0059 9.26102 15.8076 7.48348 14.2055 6.95153C13.2299 6.62759 12.7287 6.53585 12.214 6.50898C11.8785 6.49147 11.5655 6.49924 11.1382 6.50985C10.7854 6.51861 10.3547 6.5293 9.769 6.5293ZM9.769 4.5293C10.2134 4.5293 10.6124 4.52053 10.9738 4.51259C11.4913 4.50121 11.9318 4.49153 12.3182 4.5117C13.0723 4.55106 13.759 4.69591 14.8357 5.05342C17.3383 5.88437 18.8776 8.4234 19.3023 10.5384C19.5429 11.7369 19.675 13.0013 19.3216 14.0272C19.1332 14.574 18.8025 15.0674 18.2844 15.4265C17.7764 15.7786 17.1616 15.951 16.4828 15.9929C15.5353 16.0513 14.7331 15.7125 14.1405 15.3396C13.5546 14.971 13.1091 14.527 12.8695 14.2884L12.8645 14.2834C12.2595 13.6806 11.3989 13.1551 9.769 13.1551C8.13904 13.1551 7.27852 13.6806 6.6735 14.2834L6.66847 14.2884C6.42893 14.527 5.98335 14.971 5.3975 15.3396C4.80493 15.7125 4.00265 16.0513 3.0552 15.9929C2.37641 15.951 1.76158 15.7786 1.25364 15.4265C0.735483 15.0674 0.404783 14.574 0.216403 14.0272C-0.137008 13.0013 -0.00494936 11.7369 0.235701 10.5384C0.660394 8.4234 2.19969 5.88437 4.70229 5.05342C5.77902 4.69591 6.46572 4.55106 7.21978 4.5117C7.60619 4.49153 8.04667 4.50121 8.56416 4.51259C8.9256 4.52053 9.32461 4.5293 9.769 4.5293Z" fill="black"/>
+                      <path d="M5.1352 7.69141V11.577M3.19238 9.63423H7.07802" stroke="black"/>
+                      <circle cx="13.9039" cy="8.33899" r="0.647584" fill="black"/>
+                      <circle cx="13.9039" cy="10.9293" r="0.647584" fill="black"/>
+                      <circle cx="12.6095" cy="9.63391" r="0.647584" fill="black"/>
+                      <circle cx="15.1998" cy="9.63391" r="0.647584" fill="black"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_6_8411">
+                      <rect width="20" height="20" fill="white"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                  <span>Ремонт игровых приставок</span></a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Acer</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Asus</a></li>
+                  </ul>
+                </li>
+                <li class="navigation__item navigation__item--cleaner navigation__item--add">
+                  <a class="navigation__link" href="#" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_6_8426)">
+                      <path d="M17.7182 9.87044C18.2734 9.5003 18.6912 9.12391 19 8.78996V12.3076C19 13.1055 18.3272 14.0971 16.6239 14.9487C14.9803 15.7705 12.6398 16.3076 10 16.3076C7.36016 16.3076 5.01967 15.7705 3.37615 14.9487C1.67281 14.0971 1 13.1055 1 12.3076V8.78996C1.30876 9.12391 1.72663 9.5003 2.28184 9.87044C3.77073 10.863 6.18326 11.7692 10 11.7692C13.8167 11.7692 16.2293 10.863 17.7182 9.87044Z" stroke="black" stroke-width="2"/>
+                      <path d="M19 7.30762C19 8.1055 18.3272 9.09705 16.6239 9.94872C14.9803 10.7705 12.6398 11.3076 10 11.3076C7.36016 11.3076 5.01967 10.7705 3.37615 9.94872C1.67281 9.09705 1 8.1055 1 7.30762C1 6.50973 1.67281 5.51818 3.37615 4.66651C5.01967 3.84475 7.36016 3.30762 10 3.30762C12.6398 3.30762 14.9803 3.84475 16.6239 4.66651C18.3272 5.51818 19 6.50973 19 7.30762Z" stroke="black" stroke-width="2"/>
+                      <path d="M3 14.3076L1 16.9743M5 15.641L3 18.3076" stroke="black"/>
+                      <path d="M17 18.3076L15 15.641M19 16.9743L17 14.3076" stroke="black"/>
+                      <path d="M5.38468 7.69216L1.53867 6.59307" stroke="black"/>
+                      <path d="M18.6311 6.59297L14.6156 7.69209" stroke="black"/>
+                      <ellipse cx="10" cy="7.30762" rx="2" ry="1" fill="black"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_6_8426">
+                      <rect width="20" height="20" fill="white"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                  <span>Ремонт роботов-пылесосов</span></a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Acer</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Asus</a></li>
+                  </ul>
+                </li>
+                <li class="navigation__item navigation__item--company navigation__item--add">
+                  <a class="navigation__link" href="#" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.0268 8.2C2.87574 8.78806 2.79954 9.39285 2.8 10C2.8 10.621 2.8792 11.224 3.0268 11.8H5.59C5.46866 10.6031 5.46866 9.39693 5.59 8.2H3.0268ZM3.763 6.4H5.8744C6.1138 5.3047 6.4594 4.3237 6.8833 3.5074C5.57666 4.13688 4.48949 5.14471 3.763 6.4ZM16.9732 8.2H14.41C14.5313 9.39693 14.5313 10.6031 14.41 11.8H16.9732C17.2762 10.6191 17.2762 9.38087 16.9732 8.2ZM16.237 6.4C15.5105 5.14471 14.4233 4.13688 13.1167 3.5074C13.5415 4.3237 13.8862 5.3047 14.1256 6.4H16.237ZM7.4008 8.2C7.33337 8.79763 7.29972 9.39858 7.3 10C7.3 10.6165 7.3342 11.2195 7.4008 11.8H12.5992C12.7347 10.6038 12.7347 9.39617 12.5992 8.2H7.4008ZM7.723 6.4H12.277C12.1132 5.72347 11.8769 5.06657 11.5723 4.4407C11.0071 3.3112 10.4023 2.8 10 2.8C9.5968 2.8 8.9929 3.3112 8.4277 4.4407C8.1442 5.0095 7.9057 5.671 7.723 6.4ZM3.763 13.6C4.48949 14.8553 5.57666 15.8631 6.8833 16.4926C6.4585 15.6763 6.1138 14.6953 5.8744 13.6H3.763ZM16.237 13.6H14.1256C13.8862 14.6953 13.5406 15.6763 13.1167 16.4926C14.4233 15.8631 15.5105 14.8553 16.237 13.6ZM7.723 13.6C7.9057 14.329 8.1442 14.9905 8.4277 15.5593C8.9929 16.6888 9.5977 17.2 10 17.2C10.4032 17.2 11.0071 16.6888 11.5723 15.5593C11.8558 14.9905 12.0943 14.329 12.277 13.6H7.723ZM10 19C5.0293 19 1 14.9707 1 10C1 5.0293 5.0293 1 10 1C14.9707 1 19 5.0293 19 10C19 14.9707 14.9707 19 10 19Z" fill="#FFA300"/>
+                      </svg>
+
+                  <span>Компания</span></a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Acer</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Asus</a></li>
+                  </ul>
+                </li>
+                <li class="navigation__item navigation__item--guarantee navigation__item--add">
+                  <a class="navigation__link" href="#" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 3H17V10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10V3Z" stroke="#FFA300" stroke-width="2"/>
+                      <path d="M6 10.375L9.55556 13L14 6" stroke="#FFA300" stroke-width="2"/>
+                      </svg>
+
+                  <span>Гарантия</span></a>
+                  <ul class="navigation__sublist">
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Acer</a></li>
+                    <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Asus</a></li>
+                  </ul>
+                </li>
+                <li class="navigation__item navigation__item--discounts navigation__item--add">
+                  <a class="navigation__link" href="#" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.77726 11.1058C6.97186 11.1058 8.57561 9.60167 8.57561 7.05292C8.57561 4.52507 6.97186 3 4.77726 3C2.60375 3 1 4.52507 1 7.05292C1 9.60167 2.60375 11.1058 4.77726 11.1058ZM3.42673 17.812H6.46542L16.5522 3.18802H13.5135L3.42673 17.812ZM4.77726 9.12117C4.10199 9.12117 3.53224 8.53621 3.53224 7.05292C3.53224 5.56964 4.10199 4.98468 4.77726 4.98468C5.49472 4.98468 6.02227 5.56964 6.02227 7.05292C6.02227 8.53621 5.49472 9.12117 4.77726 9.12117ZM15.2016 18C17.3962 18 19 16.4958 19 13.9471C19 11.4192 17.3962 9.89415 15.2016 9.89415C13.007 9.89415 11.4244 11.4192 11.4244 13.9471C11.4244 16.4958 13.007 18 15.2016 18ZM15.2016 16.0153C14.5053 16.0153 13.9566 15.4304 13.9566 13.9471C13.9566 12.4638 14.5053 11.8788 15.2016 11.8788C15.898 11.8788 16.4467 12.4638 16.4467 13.9471C16.4467 15.4304 15.898 16.0153 15.2016 16.0153Z" fill="#FFA300"/>
+                      </svg>
+
+                  <span>Акции</span></a>
                   <ul class="navigation__sublist">
                     <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Acer</a></li>
                     <li class="navigation__subitem"><a class="navigation__sublink" href="#" target="_blank">Asus</a></li>
@@ -343,25 +439,27 @@
               <li class="service__item">
                 <picture class="service__picture">
                   <source type="image/webp" srcset="img/shop-1.webp, img/shop-1@2x.webp 2x">
-                  <img src="img/shop-1.jpg" srcset="img/shop-1@2x.jpg 2x" width="745" height="478" alt="фото специалиста">
+                  <img src="img/shop-1.jpg" srcset="img/shop-1@2x.jpg 2x" width="745" height="478" alt="фото сервисного центра">
                 </picture>
               </li>
               <li class="service__item">
                 <p class="title title--large">Сервисные центры</p>
                 <p>Первый сервисный центр Белый Сервис распахнул свои двери 28&nbsp;марта 2012 года по&nbsp;адресу&nbsp;г. Челябинск, ул. Энгельса&nbsp;75.</p>
                 <p>На&nbsp;текущий момент &laquo;Белый Сервис&raquo; имеет три филиала со&nbsp;своими приемщиками и&nbsp;мастерами. Гибко распределяем рабочую нагрузку: если персонал на&nbsp;одной из&nbsp;точек перегружен заказами, то&nbsp;часть работ передается их&nbsp;менее загруженным коллегам из&nbsp;другого филиала.</p>
-                <a href="catalog.html" target="_blank" class="btn service__item-btn">Показать адреса</a>
+                <div class="service__item-btn-wrapper">
+                  <a href="catalog.html" target="_blank" class="btn service__item-btn">Показать адреса</a>
+                </div>
               </li>
               <li class="service__item">
                 <picture class="service__picture">
                   <source type="image/webp" srcset="img/shop-2.webp, img/shop-2@2x.webp 2x">
-                  <img src="img/shop-2.jpg" srcset="img/shop-2@2x.jpg 2x" width="745" height="478" alt="фото специалиста">
+                  <img src="img/shop-2.jpg" srcset="img/shop-2@2x.jpg 2x" width="745" height="478" alt="фото сервисного центра">
                 </picture>
               </li>
               <li class="service__item">
                 <picture class="service__picture">
                   <source type="image/webp" srcset="img/shop-3.webp, img/shop-3@2x.webp 2x">
-                  <img src="img/shop-3.jpg" srcset="img/shop-3@2x.jpg 2x" width="745" height="478" alt="фото специалиста">
+                  <img src="img/shop-3.jpg" srcset="img/shop-3@2x.jpg 2x" width="745" height="478" alt="фото сервисного центра">
                 </picture>
               </li>
            </ul>

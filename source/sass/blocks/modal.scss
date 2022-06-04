@@ -89,6 +89,10 @@
   border-radius: 10px;
   outline: 0;
   transition: 0.3s ease;
+
+  @include vp-767 {
+    min-width: 290px;
+  }
 }
 
 .modal input::placeholder {

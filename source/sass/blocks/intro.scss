@@ -15,6 +15,13 @@
   @include vp-1023 {
     margin-bottom: 120px;
   }
+
+  @include vp-767 {
+    padding-bottom: 60px;
+    margin-bottom: 0;
+    box-shadow: unset;
+    border-bottom: none;
+  }
 }
 
 .intro__inner {
@@ -33,6 +40,10 @@
   @include vp-1023 {
     min-height: 775px;
   }
+
+  @include vp-767 {
+    min-height: 100%;
+  }
 }
 
 .intro__inner .title,
@@ -41,6 +52,10 @@
 
   @include vp-1365 {
     margin-bottom: 40px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 32px;
   }
 }
 
@@ -54,6 +69,19 @@
   @include vp-1365 {
     padding-right: 22px;
   }
+
+  @include vp-767 {
+    padding-right: 70px;
+    min-height: 52px;
+    z-index: 10;
+  }
+}
+
+.intro__inner .text-medium {
+  @include vp-767 {
+    padding-right: 115px;
+    min-height: 84px;
+  }
 }
 
 .intro__inner .btn--orange {
@@ -65,6 +93,10 @@
 
   @include vp-1365 {
     max-width: 290px;
+  }
+
+  @include vp-767{
+    max-width: 100%;
   }
 }
 
@@ -88,6 +120,11 @@
 
   @include vp-1023 {
     min-width: 52%;
+  }
+
+  @include vp-767 {
+    margin-top: 60px;
+    min-width: 100%;
   }
 }
 
@@ -116,6 +153,17 @@
   @include vp-1023 {
     right: 5px;
     bottom: 100px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    padding: 11px 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -177,6 +225,11 @@
   @include vp-1365 {
     min-height: 631px;
   }
+
+  @include vp-767 {
+    max-height: 231px;
+    min-height: unset;
+  }
 }
 
 .intro__inner-img img {
@@ -191,6 +244,10 @@
 
   @include vp-1365 {
     left: 10px;
+  }
+
+  @include vp-767 {
+    left: -115px;
   }
 }
 

@@ -4,6 +4,10 @@
   @include vp-1365 {
     margin-bottom: 140px;
   }
+
+  @include vp-767 {
+    margin-bottom: 125px;
+  }
 }
 
 .specialists__header {
@@ -30,10 +34,20 @@
   @include vp-1365 {
     margin-bottom: 32px;
   }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }
 
 .specialists__inner {
   position: relative;
+}
+
+.specialists__inner .text-medium {
+  @include vp-767 {
+    padding: 0 20px;
+  }
 }
 
 
