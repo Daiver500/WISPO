@@ -5,4 +5,17 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 1285px;
+
+  @include vp-1023 {
+    max-width: unset;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    min-width: 100%;
+    grid-template-columns: 1fr;
+  }
 }
